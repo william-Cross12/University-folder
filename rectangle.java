@@ -5,7 +5,7 @@ public class rectangle {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter rectangle Length: ");
         int Length = sc.nextInt();
-        System.out.print("Enter  rectangle Height: ");
+        System.out.print("Enter rectangle Height: ");
         int Height = sc.nextInt();
         int Area = Length * Height;
         int Perimeter = ((Length*2) + (Height*2));
