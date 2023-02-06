@@ -1,3 +1,4 @@
+package module_1_programming_concepts.week_1;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args)
