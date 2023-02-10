@@ -16,6 +16,7 @@ public class Exercise_2 {
             case'D': System.out.println("3rd");break;
             case'E': System.out.println("ordinary");break;
             case'F': System.out.println("fail");break;
+            default: System.out.println("invalid entry");
         }
 
 
