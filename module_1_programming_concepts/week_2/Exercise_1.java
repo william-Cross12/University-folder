@@ -1,4 +1,3 @@
-package module_1_programming_concepts.week_2;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
