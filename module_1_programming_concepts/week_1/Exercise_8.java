@@ -1,6 +1,5 @@
-package module_1_programming_concepts.week_1;
 import java.util.Scanner;
-public class converter {
+public class Exercise_8 {
     public static void main(String[] args)
     {
         int FEET_MILES = 5280;

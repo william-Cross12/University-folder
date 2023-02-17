@@ -1,6 +1,5 @@
-package module_1_programming_concepts.week_1;
 import java.util.Scanner;
-public class rectangle {
+public class Exercise_3 {
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);

@@ -1,8 +1,7 @@
-package module_1_programming_concepts.week_1;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
-public class age {
+public class Exercise_7 {
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
