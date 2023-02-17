@@ -12,7 +12,7 @@ public class Exercise_8 {
         System.out.print("enter start num: ");
         int num = sc.nextInt();
 
-        for(int nums = 0; nums<21; num++, nums++)
+        for(int nums = 0; nums<20; num++, nums++)
         {
             if(isEven(num)){
                 System.out.println(num);
