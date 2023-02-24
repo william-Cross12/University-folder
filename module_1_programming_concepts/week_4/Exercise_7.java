@@ -102,7 +102,7 @@ class Student7
 {
     private int id;
     private String name;
-    private Course4 course;
+    private Course7 course;
     private int[] mark = new int[4];
     
 
@@ -116,7 +116,7 @@ class Student7
         this.mark[3] = mark4;
     }
 
-    public void enroll(Course4 student_course)
+    public void enroll(Course7 student_course)
     {
         this.course = student_course;
     }
@@ -133,7 +133,7 @@ class Student7
     {
         return this.mark;
     }
-    public Course4 getCourse()
+    public Course7 getCourse()
     {
         return this.course;
     }
