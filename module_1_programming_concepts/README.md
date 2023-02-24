@@ -7,7 +7,7 @@ week 2: watched 2 lectures on iteration and selection in java, completed the wee
 
 week 3: watched a 40 muinet lecture, chatted to Jonathan about the current module and what was going to happen on it and then completed the week 3 tasks.      7 Hours
 
-week 4
+week 4: watched the 2 lectures and read through the powerpoint. caught up with Jonathan about the marking requirements for the current module and then completed the week 4.     7 hours
 week 5
 week 6
 week 7
