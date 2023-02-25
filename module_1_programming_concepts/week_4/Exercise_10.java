@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.Random;
-import java.util.List;
 public class Exercise_10 {
     public static void main(String[] args)
     {
@@ -54,8 +52,7 @@ public class Exercise_10 {
         System.out.println(name);
 
         Course10 course = student.getCourse();
-        ArrayList<Module10> modules = course.getModules();
-        List new_modules = modules;
+        Module10[] modules = course.getModules();
 
         ModuleMark marks = student.getMark();//gives moduleMarks type
         int[] mark_list = marks.getMark();
@@ -65,7 +62,8 @@ public class Exercise_10 {
         while(count < 3){
 
 
-            String module = (String) new_modules.get(count);/////////////breaks here (figure out how to get an arraylist or make into list)
+            Module10 module_obj = modules[count];
+            String module = module_obj.getName();
 
             int mark = mark_list[count];
             String grade = grade_list[count];
@@ -178,7 +176,7 @@ class Course10
 {
     private String code;
     private String name;
-    private ArrayList<Module10> module3s = new ArrayList<Module10>();
+    private Module10[] module3s = new Module10[4];
 
     public Course10(String Course_code, String Course_name, Module10 mod1, Module10 mod2, Module10 mod3, Module10 mod4)
     {
@@ -186,10 +184,10 @@ class Course10
         this.name = Course_name;
 
 
-        this.module3s.add(mod1);
-        this.module3s.add(mod2);
-        this.module3s.add(mod3);
-        this.module3s.add(mod4);
+        this.module3s[0] = (mod1);
+        this.module3s[1] = (mod2);
+        this.module3s[2] = (mod3);
+        this.module3s[3] = (mod4);
 
     }
     public String getName()
@@ -200,7 +198,7 @@ class Course10
     {
         return this.code;
     }
-    public ArrayList<Module10> getModules()
+    public Module10[] getModules()
     {
         return this.module3s;
     }
