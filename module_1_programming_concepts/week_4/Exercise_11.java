@@ -1,16 +1,17 @@
 import java.util.Random;
-public class Exercise_10 {
+import java.util.Arrays;
+public class Exercise_11 {
     public static void main(String[] args)
     {
-        Module10 mod1 = new Module10("AUG399ga93", "computers");
+        Module11 mod1 = new Module11("AUG399ga93", "computers");
 
-        Module10 mod2 = new Module10("GKhsohko", "books");
+        Module11 mod2 = new Module11("GKhsohko", "books");
 
-        Module10 mod3 = new Module10("wk3j4tiTO", "art");
+        Module11 mod3 = new Module11("wk3j4tiTO", "art");
 
-        Module10 mod4 = new Module10("93htuw9", "tech");
+        Module11 mod4 = new Module11("93htuw9", "tech");
 
-        Course10 course = new Course10("39429693", "computer science", mod1, mod2, mod3, mod4);
+        Course11 course = new Course11("39429693", "computer science", mod1, mod2, mod3, mod4);
 
 
         Random randomNum = new Random();
@@ -18,7 +19,7 @@ public class Exercise_10 {
         int mark2 = randomNum.nextInt(101);
         int mark3 = randomNum.nextInt(101);
         int mark4 = randomNum.nextInt(101);
-        Student10 student = new Student10("Alex", 39429593);
+        Student11 student = new Student11("Alex", 39429593);
 
         student.enroll(course);
         student.add_module_mark(mark1, mark2, mark3, mark4);
@@ -28,67 +29,55 @@ public class Exercise_10 {
         int mark6 = randomNum2.nextInt(101);
         int mark7 = randomNum2.nextInt(101);
         int mark8 = randomNum2.nextInt(101);
-        Student10 student2 = new Student10("May", 8724);
+        Student11 student2 = new Student11("May", 8724);
 
         student2.enroll(course);
         student2.add_module_mark(mark5, mark6, mark7, mark8);
 
 
-        Exercise_10.print_student_list(student, student2);
+        Exercise_11.print_student_list(student, student2);
 
     }
-    public static void print_student_list(Student10 student, Student10 student2)
+    public static void print_student_list(Student11 student, Student11 student2)
     {
         
         String name = student.getName();
-        Exercise_10.get_student_info(student, name);
+        Exercise_11.get_student_info(student, name);
 
         String name2 = student2.getName();
-        Exercise_10.get_student_info(student2, name2);
+        Exercise_11.get_student_info(student2, name2);
         
     }
-    public static void get_student_info(Student10 student, String name)
+    public static void get_student_info(Student11 student, String name)
     {
         System.out.println(name);
+        System.out.println();
+        ModuleMark2 marks = student.getMark();
 
-        Course10 course = student.getCourse();
-        Module10[] modules = course.getModules();
+        int min = marks.getMin();
+        int max = marks.getMax();
+        double mean = marks.getMean();
 
-        ModuleMark marks = student.getMark();//gives moduleMarks type
-        int[] mark_list = marks.getMark();
-        String[] grade_list = marks.getLetterGrade();
-
-        int count = 0;
-        while(count < 3){
-
-
-            Module10 module_obj = modules[count];
-            String module = module_obj.getName();
-
-            int mark = mark_list[count];
-            String grade = grade_list[count];
-
-            System.out.print(module);
-            System.out.print("    ");
-
-            System.out.print(mark);
-            System.out.print("    ");
-            System.out.println(grade);
-        
-            System.out.println();
-            count++;
-        }
+        System.out.print(min);
+        System.out.println("     min");
+        System.out.print(max);
+        System.out.println("     max");
+        System.out.print(mean);
+        System.out.println("     mean");
+        System.out.println();
+        System.out.println();
+       
     }
 }
 
 
 
-class ModuleMark
+class ModuleMark2
 {
     private int[] mark = new int[4];
     
 
-    public ModuleMark(int mark1, int mark2, int mark3, int mark4)
+    public ModuleMark2(int mark1, int mark2, int mark3, int mark4)
     {
         this.mark[0] = mark1;
         this.mark[1] = mark2;
@@ -126,34 +115,56 @@ class ModuleMark
 
         return(grade);
     }
+    public int getMin()
+    {
+        int min = Arrays.stream(this.mark).min().getAsInt();
+        return(min);
+    }
+    public int getMax()
+    {
+        int max = Arrays.stream(this.mark).max().getAsInt();
+        return(max);
+    }
+    public double getMean()
+    {
+ 
+        int sum = 0;
+ 
+        for (int i = 0; i < 4; i++) {
+            sum += this.mark[i];
+        }
+ 
+        double mean = sum / 4;
+        return(mean);
+    }
 }
 
-class Student10
+class Student11
 {
     private int id;
     private String name;
-    private Course10 course;
-    private ModuleMark module_marks;
+    private Course11 course;
+    private ModuleMark2 module_marks;
     
 
-    public Student10(String Student_name, int Student_id)
+    public Student11(String Student_name, int Student_id)
     {
         this.name = Student_name;
         this.id = Student_id;
     }
 
-    public void enroll(Course10 student_course)
+    public void enroll(Course11 student_course)
     {
         this.course = student_course;
     }
 
     public void add_module_mark(int mark1, int mark2, int mark3, int mark4)
     {
-        ModuleMark module_mark = new ModuleMark(mark1, mark2, mark3, mark4);
+        ModuleMark2 module_mark = new ModuleMark2(mark1, mark2, mark3, mark4);
         this.module_marks = module_mark;
     }
 
-    public ModuleMark getMark()
+    public ModuleMark2 getMark()
     {
         return this.module_marks;
     }
@@ -166,19 +177,19 @@ class Student10
     {
         return this.id;
     }
-    public Course10 getCourse()
+    public Course11 getCourse()
     {
         return this.course;
     }
 }
 
-class Course10
+class Course11
 {
     private String code;
     private String name;
-    private Module10[] module3s = new Module10[4];
+    private Module11[] module3s = new Module11[4];
 
-    public Course10(String Course_code, String Course_name, Module10 mod1, Module10 mod2, Module10 mod3, Module10 mod4)
+    public Course11(String Course_code, String Course_name, Module11 mod1, Module11 mod2, Module11 mod3, Module11 mod4)
     {
         this.code = Course_code;
         this.name = Course_name;
@@ -198,18 +209,18 @@ class Course10
     {
         return this.code;
     }
-    public Module10[] getModules()
+    public Module11[] getModules()
     {
         return this.module3s;
     }
 }
 
-class Module10
+class Module11
 {
     private String code;
     private String name;
 
-    public Module10(String Module_code, String Module_name)
+    public Module11(String Module_code, String Module_name)
     {
         this.code = Module_code;
         this.name = Module_name;
