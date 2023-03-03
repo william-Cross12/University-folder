@@ -5,7 +5,7 @@ public class Exercise_3 {
         Product3 product = new Product3(298756, "Computer", 5000000);
         Product3 product2 = new Product3(23462, "Keyboard", 324675);
         Product3 product3 = new Product3(3256, "Mouse", 23567);
-        Product3 product4 = new Product3(298756, "Computer", 5000000);
+        Product3 product4 = new Product3(298756, "Computer", 5000000);      //creates more products to test new functionalities
 
         product.setId(20);
         product.setName("20");
@@ -55,32 +55,32 @@ public class Exercise_3 {
 
 class StockList3
 {
-    private ArrayList<Product3> product_collection = new ArrayList<Product3>();
+    private ArrayList<Product3> product_collection = new ArrayList<Product3>();     //arraylist of products
 
 
-    public StockList3(Product3 product)
+    public StockList3(Product3 product)             //constructs the class
     {
         this.product_collection.add(product);
     }
 
 
-    public void addProduct(Product3 product)
+    public void addProduct(Product3 product)        //adds products to arraylist
     {
         this.product_collection.add(product);
     }
 
-    public void removeProduct(Product3 product)
+    public void removeProduct(Product3 product)     //removes product from arraylist
     {
         this.product_collection.remove(product);
     }
 
-    public Product3 findProduct(int id)
+    public Product3 findProduct(int id)             //user sends id
     {
-        for(Product3 product_from_list:(this.product_collection))
+        for(Product3 product_from_list:(this.product_collection))       //checks through everything in the arraylist
         {
-            if((product_from_list.getId()) == id)
+            if((product_from_list.getId()) == id)       //if the arraylist id is the same as the inputted id:
             {
-                return(product_from_list);
+                return(product_from_list);    //outputs that item from the arraylist
             }
         }
         return null;

@@ -5,34 +5,34 @@ public class Exercise_4 {
 
 
 
-class StockDemo4
+class StockDemo4        //basically this class does all the tests I ran in the earlier tasks without me realising
 {
 
     private Product4 product;
-    private Product4 product2;
+    private Product4 product2;          //variables used in the class
     private Product4 product3;
     private StockList4 stocklist;
 
-    public void createProduct()
+    public void createProduct()     //creates the product method
     {
         this.product = new Product4(298756, "Computer", 5000000);
         this.product2 = new Product4(23462, "Keyboard", 324675);
         this.product3 = new Product4(3256, "Mouse", 23567);
     }
 
-    public void addToList()
+    public void addToList()     //method to add created products to the array list in StockList
     {
         this.stocklist = new StockList4(this.product);
         this.stocklist.addProduct(this.product2);
         this.stocklist.addProduct(this.product3);
     }
 
-    public void removeFromList()
+    public void removeFromList()        //method to remove item from the arraylist
     {
         this.stocklist.removeProduct(product2);
     }
 
-    public void printList()
+    public void printList()     //method iterates through arraylist sending each to other method which disects them and prints them
     {
         ArrayList<Product4> products = this.stocklist.getProducts();
         for(Product4 product:products)
@@ -41,7 +41,7 @@ class StockDemo4
         }
     }
 
-    public void printProduct(Product4 product)
+    public void printProduct(Product4 product)      //method that actually prints the information
     {
         int id = product.getId();
         String name = product.getName();
@@ -56,7 +56,7 @@ class StockDemo4
         System.out.println();
     }
 
-    public void searchList()
+    public void searchList()        //method that searches the arraylist and sends to be printed
     {
         Product4 found_product = this.stocklist.findProduct(298756);
 

@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 public class Exercise_6 {
-    public static void main(String[] args)
+    public static void main(String[] args)      //main method that runs when the code is ran
     {
-        StockDemo6 demo = new StockDemo6();
-        demo.run();
+        StockDemo6 demo = new StockDemo6();     //initalises the StockDemo class
+        demo.run();             //runs the run function in the StockDemo class
 
     }
 

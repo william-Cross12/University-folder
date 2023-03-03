@@ -1,7 +1,7 @@
 public class Exercise_2 {
     public static void main(String[] args)
     {
-        Product2 product = new Product2(298756, "Computer", 5000000);
+        Product2 product = new Product2(298756, "Computer", 5000000);       //creates product to test if code works at current point
 
         product.setId(20);
         product.setName("20");
@@ -10,7 +10,7 @@ public class Exercise_2 {
         Exercise_2.print_Product(product);
     }
 
-    public static void print_Product(Product2 product)
+    public static void print_Product(Product2 product)      //print method
     {
         int id = product.getId();
         String name = product.getName();
@@ -29,10 +29,10 @@ public class Exercise_2 {
 class Product2
 {
     private int id;
-    private String name;
+    private String name;        //creates variables for the class
     private int quantity;
 
-    public Product2(int id, String name, int quantity)
+    public Product2(int id, String name, int quantity)      //class constructor
     {
         this.id = id;
         this.name = name;
@@ -40,7 +40,7 @@ class Product2
     }
 
 
-    public void setId(int new_id)
+    public void setId(int new_id)       //getter methods
     {
         this.id = new_id;
     }
@@ -56,7 +56,7 @@ class Product2
     }
 
 
-    public int getId()
+    public int getId()          //setter methods
     {
         return(this.id);
     }

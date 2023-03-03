@@ -3,7 +3,7 @@ public class Exercise_1 {
 }
 
 
-class Product
+class Product       //creates classes
 {
 
 }

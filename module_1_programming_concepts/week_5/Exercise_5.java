@@ -14,13 +14,24 @@ class StockDemo5
     private StockList5 stocklist;
 
 
-    public void run()
+    public void run()       //adds run method that when called will run everything in the StockDemo class in the correct order
     {
+        System.out.println("creating products...");
         this.createProduct();
+
+        System.out.println("adding to list...");
         this.addToList();
+
+        System.out.println("printing list:");
         this.printList();
+
+        System.out.println("removing Keyboard from list...");
         this.removeFromList();
+
+        System.out.println("printing list:");
         this.printList();
+
+        System.out.println("searching list for Computer...");
         this.searchList();
 
     }
