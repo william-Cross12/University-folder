@@ -50,19 +50,23 @@ class StockDemo5
         ArrayList<Product5> products = this.stocklist.getProducts();
         for(Product5 product:products)
         {
-            
-            int id = product.getId();
-            String name = product.getName();
-            int quantity = product.getQuantity();
-    
-            System.out.print(id);
-            System.out.println("     id");
-            System.out.print(name);
-            System.out.println("     name");
-            System.out.print(quantity);
-            System.out.println("     quantity");
-            System.out.println();
+            this.printProduct(product);
         }
+    }
+
+    public void printProduct(Product5 product)
+    {
+        int id = product.getId();
+        String name = product.getName();
+        int quantity = product.getQuantity();
+    
+        System.out.print(id);
+        System.out.println("     id");
+        System.out.print(name);
+        System.out.println("     name");
+        System.out.print(quantity);
+        System.out.println("     quantity");
+        System.out.println();
     }
 
     public void searchList()
