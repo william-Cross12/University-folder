@@ -3,6 +3,8 @@ public class Exercise_2 {
     {
         Product2 product = new Product2(298756, "Computer", 5000000);
 
+        product.setId(20);
+        product.setName("20");
         product.setQuantity(20);
 
         Exercise_2.print_Product(product);
@@ -37,6 +39,16 @@ class Product2
         this.quantity = quantity;
     }
 
+
+    public void setId(int new_id)
+    {
+        this.id = new_id;
+    }
+
+    public void setName(String new_name)
+    {
+        this.name = new_name;
+    }
 
     public void setQuantity(int new_quantity)
     {
