@@ -9,6 +9,11 @@ week 3: watched a 40 muinet lecture, chatted to Jonathan about the current modul
 
 week 4: watched the 2 lectures and read through the powerpoint. caught up with Jonathan about the marking requirements for the current module and then completed the week 4.     7 hours
 week 5
+
+
+all files in weeks 1 - 4 are part of task 1 on the assignment
+
+
 week 6
 week 7
 week 8
