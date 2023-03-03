@@ -25,7 +25,7 @@ class Student8
 {
     private int id;
     private String name;
-    private Course8 course;
+    private Course8 course;             //adds a variable of type course to this class
 
     public Student8(String Student_name, int Student_id)
     {

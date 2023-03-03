@@ -7,24 +7,24 @@ public class Exercise_11 {
 
         String Course_code = "AUG389ga93";
         String Course_name = "computers";
-        Course11 course = new Course11(Course_code, Course_name);
+        Course11 course = new Course11(Course_code, Course_name);           //creates a course to add into the student class
 
         student.enroll(course);
 
         String name = student.getName();
         int id = student.getID();
-        Exercise_11.print_student(name, id);
+        Exercise_11.print_student(name, id, course);
     }
-    public static void print_student(String name, int id)
+    public static void print_student(String name, int id, Course11 course)      //now that a course exists print course code is added
     {
         System.out.println(name);
         System.out.println(id);
+        System.out.println(course);
     }
-    public static void print_course(String name, String code, Course11 course)
+    public static void print_course(String name, String code)
     {
         System.out.println(name);
         System.out.println(code);
-        System.out.println(course);
     }
 }
 

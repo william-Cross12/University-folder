@@ -3,7 +3,7 @@ public class Exercise_4 {
     {
         String Student_name = "Alex";
         int Student_id = 37429583;
-        Student4 student = new Student4(Student_name, Student_id);
+        Student4 student = new Student4(Student_name, Student_id);      //creates student class object
     }
     public static void print(String name, int id)
     {
@@ -14,7 +14,6 @@ public class Exercise_4 {
 
 class Student4
 {
-    public static Object student2;
     private int id;
     private String name;
 

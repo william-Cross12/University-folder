@@ -33,7 +33,7 @@ class Student9
         this.id = Student_id;
     }
 
-    public void enroll(Course9 student_course)
+    public void enroll(Course9 student_course)          //adds an option to add course to a student via this method
     {
         this.course = student_course;
     }

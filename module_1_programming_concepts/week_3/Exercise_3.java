@@ -2,7 +2,7 @@ public class Exercise_3 {
     public static void main(String[] args)
     {
     }
-    public static void print(String name, int id)
+    public static void print(String name, int id)       //creates a method to print values from student class
     {
         System.out.println(name);
         System.out.println(id);
@@ -11,7 +11,6 @@ public class Exercise_3 {
 
 class Student3
 {
-    public static Object student2;
     private int id;
     private String name;
 

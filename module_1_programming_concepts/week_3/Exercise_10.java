@@ -6,18 +6,18 @@ public class Exercise_10 {
         Student10 student = new Student10(Student_name, Student_id);
         String name = student.getName();
         int id = student.getID();
-        Exercise_10.print_student(name, id);
+        Exercise_10.print_student(name, id);//, course);
     }
-    public static void print_student(String name, int id)
+    public static void print_student(String name, int id)//, Course10 course)
     {
         System.out.println(name);
         System.out.println(id);
+        //System.out.println(course);         //gets ready to add a print course option in the print student method
     }
-    public static void print_course(String name, String code, Course10 course)
+    public static void print_course(String name, String code)
     {
         System.out.println(name);
         System.out.println(code);
-        System.out.println(course);
     }
 }
 

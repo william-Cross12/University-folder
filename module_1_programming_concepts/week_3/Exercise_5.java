@@ -6,7 +6,7 @@ public class Exercise_5 {
         Student5 student = new Student5(Student_name, Student_id);
         String name = student.getName();
         int id = student.getID();
-        Exercise_5.print(name, id);
+        Exercise_5.print(name, id);             //gets variables from student class and then sends them to the print method
     }
     public static void print(String name, int id)
     {

@@ -23,7 +23,7 @@ public class Exercise_12 {
         String names = course.getName();
         String code = course.getCode();
         
-        Exercise_12.print_course(names, code);
+        Exercise_12.print_course(names, code);                  //gets course information from the class and sends it to the print course method to print
     }
     public static void print_course(String name, String code)
     {

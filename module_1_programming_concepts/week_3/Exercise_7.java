@@ -13,7 +13,7 @@ public class Exercise_7 {
         System.out.println(name);
         System.out.println(id);
     }
-    public static void print_course(String name, String code)
+    public static void print_course(String name, String code)       //creates a method to print values from course class
     {
         System.out.println(name);
         System.out.println(code);
@@ -47,7 +47,7 @@ class Course7
     private String code;
     private String name;
 
-    public Course7(String Course_code, String Course_name)
+    public Course7(String Course_code, String Course_name)        //constructor usses vallues passed into it to give the variables in this class information
     {
         this.code = Course_code;
         this.name = Course_name;

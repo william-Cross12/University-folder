@@ -39,7 +39,7 @@ class Student6
 
 class Course6
 {
-    private String code;
+    private String code;        //creates course class with id and name as variables in it
     private String name;
 }
 
