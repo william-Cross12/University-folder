@@ -4,8 +4,8 @@ public class Exercise_2 {
     {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter your name: ");
-        String name = sc.nextLine();
-        System.out.println("Hello " + name + "!");
+        String name = sc.nextLine();                //user enters their name into the terminal using the scanner
+        System.out.println("Hello " + name + "!");  //their inputted name is then printed out
         sc.close();
     }
 }

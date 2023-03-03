@@ -4,13 +4,13 @@ public class Exercise_3 {
     {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter rectangle Length: ");
-        int Length = sc.nextInt();
+        int Length = sc.nextInt();                             //user enters length of a rectangle into the terminal using the scanner
         System.out.print("Enter rectangle Height: ");
-        int Height = sc.nextInt();
+        int Height = sc.nextInt();                             //user enters height of a rectangle into the terminal using the scanner
         int Area = Length * Height;
-        int Perimeter = ((Length*2) + (Height*2));
+        int Perimeter = ((Length*2) + (Height*2));      //area and perimeter are then calculatedc and assigned to variables
         System.out.println("Area: " + Area);
-        System.out.println("Perimeter: " + Perimeter);
+        System.out.println("Perimeter: " + Perimeter);      //area and perimeter are then outputed
 
         sc.close();
     }
