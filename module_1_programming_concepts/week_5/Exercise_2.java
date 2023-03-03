@@ -3,6 +3,8 @@ public class Exercise_2 {
     {
         Product2 product = new Product2(298756, "Computer", 5000000);
 
+        product.setQuantity(20);
+
         Exercise_2.print_Product(product);
     }
 
