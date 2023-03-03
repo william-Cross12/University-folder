@@ -115,17 +115,17 @@ class ModuleMark2
 
         return(grade);
     }
-    public int getMin()
+    public int getMin()     //method to calculate minimum module grade
     {
         int min = Arrays.stream(this.mark).min().getAsInt();
         return(min);
     }
-    public int getMax()
+    public int getMax()     //method to calculate maximum module grade
     {
         int max = Arrays.stream(this.mark).max().getAsInt();
         return(max);
     }
-    public double getMean()
+    public double getMean()     //method to calculate average module grade
     {
  
         int sum = 0;

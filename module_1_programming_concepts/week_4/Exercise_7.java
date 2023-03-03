@@ -16,10 +16,10 @@ public class Exercise_7 {
 
         Random randomNum = new Random();
         int mark1 = randomNum.nextInt(101);
-        int mark2 = randomNum.nextInt(101);
+        int mark2 = randomNum.nextInt(101);     //random number generator that goes 0 to 100 (fufilling requirements of being between these 2 numbers)
         int mark3 = randomNum.nextInt(101);
         int mark4 = randomNum.nextInt(101);
-        Student7 student = new Student7("Alex", 37429583, mark1, mark2, mark3, mark4);
+        Student7 student = new Student7("Alex", 37429583, mark1, mark2, mark3, mark4);      //creates student using the class
 
 
         int[] mark_list = student.getMark();
@@ -39,7 +39,7 @@ public class Exercise_7 {
     {
         System.out.println(name);
         System.out.println(code);
-        System.out.println(mark_list[position]);
+        System.out.println(mark_list[position]);    //adds print statements for the student in this method
         System.out.println();
     }
 }

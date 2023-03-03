@@ -29,7 +29,7 @@ class Course2
 {
     private String code;
     private String name;
-    private ArrayList<Module2> module2s = new ArrayList<Module2>();
+    private ArrayList<Module2> module2s = new ArrayList<Module2>();     //creates array list
 
     public Course2(String Course_code, String Course_name, Module2 mod1, Module2 mod2, Module2 mod3, Module2 mod4)
     {
@@ -39,7 +39,7 @@ class Course2
 
         this.module2s.add(mod1);
         this.module2s.add(mod2);
-        this.module2s.add(mod3);
+        this.module2s.add(mod3);        //adds values to array list
         this.module2s.add(mod4);
 
     }

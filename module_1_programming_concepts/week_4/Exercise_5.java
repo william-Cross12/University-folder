@@ -2,25 +2,15 @@ import java.util.ArrayList;
 public class Exercise_5 {
     public static void main(String[] args)
     {
-        String Module_code1 = "AUG389ga93";
-        String Module_name1 = "computers";
-        Module5 mod1 = new Module5(Module_code1, Module_name1);
+        Module5 mod1 = new Module5("AUG389ga93", "computers");
 
-        String Module_code2 = "GKhsohko";
-        String Module_name2 = "books";
-        Module5 mod2 = new Module5(Module_code2, Module_name2);
+        Module5 mod2 = new Module5("GKhsohko", "books");  
 
-        String Module_code3 = "wk3j4tiTO";
-        String Module_name3 = "art";
-        Module5 mod3 = new Module5(Module_code3, Module_name3);
+        Module5 mod3 = new Module5("wk3j4tiTO", "art");
 
-        String Module_code4 = "83htuw8";
-        String Module_name4 = "tech";
-        Module5 mod4 = new Module5(Module_code4, Module_name4);
+        Module5 mod4 = new Module5("83htuw8", "tech");
 
-        String Course_name = "computer science";
-        String Course_code = "37429583";
-        Course5 course = new Course5(Course_code, Course_name, mod1, mod2, mod3, mod4);
+        Course5 course = new Course5("37429683", "computer science", mod1, mod2, mod3, mod4);
 
 
         ArrayList<Module5> modules = course.getModules();
@@ -107,7 +97,7 @@ class Student5
         this.name = Student_name;
         this.id = Student_id;
         this.mark[0] = mark1;
-        this.mark[1] = mark2;
+        this.mark[1] = mark2;       //assigns values to the mark list
         this.mark[2] = mark3;
         this.mark[3] = mark4;
     }

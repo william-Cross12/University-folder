@@ -71,7 +71,7 @@ class Module9
         return this.code;
     }
 
-    enum grade {
+    enum grade {    //enumerate type method
         A,
         B,
         C,
@@ -79,7 +79,7 @@ class Module9
         F
     }
 
-    public grade getLetterGrade(int mark)
+    public grade getLetterGrade(int mark)     //rewritten method to use enumerate type
     {
         if(mark>=0 && mark<=39)
             return (grade.F);

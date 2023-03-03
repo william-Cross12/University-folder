@@ -28,7 +28,7 @@ public class Exercise_10 {
         int mark6 = randomNum2.nextInt(101);
         int mark7 = randomNum2.nextInt(101);
         int mark8 = randomNum2.nextInt(101);
-        Student10 student2 = new Student10("May", 8724);
+        Student10 student2 = new Student10("May", 8724);        //creates second student to test new code features
 
         student2.enroll(course);
         student2.add_module_mark(mark5, mark6, mark7, mark8);
@@ -37,7 +37,7 @@ public class Exercise_10 {
         Exercise_10.print_student_list(student, student2);
 
     }
-    public static void print_student_list(Student10 student, Student10 student2)
+    public static void print_student_list(Student10 student, Student10 student2)        //gets all students and then splits everything in them up to be printed seperately in another method
     {
         
         String name = student.getName();
@@ -54,7 +54,7 @@ public class Exercise_10 {
         Course10 course = student.getCourse();
         Module10[] modules = course.getModules();
 
-        ModuleMark marks = student.getMark();//gives moduleMarks type
+        ModuleMark marks = student.getMark();
         int[] mark_list = marks.getMark();
         String[] grade_list = marks.getLetterGrade();
 
@@ -83,7 +83,7 @@ public class Exercise_10 {
 
 
 
-class ModuleMark
+class ModuleMark        //creates module mark class that brings together other peices of code that where else where (like the number to letter grade) all together for ease of use
 {
     private int[] mark = new int[4];
     

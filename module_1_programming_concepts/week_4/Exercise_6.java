@@ -2,25 +2,15 @@ import java.util.ArrayList;
 public class Exercise_6 {
     public static void main(String[] args)
     {
-        String Module_code1 = "AUG389ga93";
-        String Module_name1 = "computers";
-        Module6 mod1 = new Module6(Module_code1, Module_name1);
+        Module6 mod1 = new Module6("AUG389ga93", "computers");
 
-        String Module_code2 = "GKhsohko";
-        String Module_name2 = "books";
-        Module6 mod2 = new Module6(Module_code2, Module_name2);
+        Module6 mod2 = new Module6("GKhsohko", "books");  
 
-        String Module_code3 = "wk3j4tiTO";
-        String Module_name3 = "art";
-        Module6 mod3 = new Module6(Module_code3, Module_name3);
+        Module6 mod3 = new Module6("wk3j4tiTO", "art");
 
-        String Module_code4 = "83htuw8";
-        String Module_name4 = "tech";
-        Module6 mod4 = new Module6(Module_code4, Module_name4);
+        Module6 mod4 = new Module6("83htuw8", "tech");
 
-        String Course_name = "computer science";
-        String Course_code = "37429683";
-        Course6 course = new Course6(Course_code, Course_name, mod1, mod2, mod3, mod4);
+        Course6 course = new Course6("37429683", "computer science", mod1, mod2, mod3, mod4);
 
 
         int[] mark_list = student.getMark();
@@ -36,7 +26,7 @@ public class Exercise_6 {
         }
 
     }
-    public static void print_module(String name, String code, int position, int[] mark_list)
+    public static void print_module(String name, String code, int position, int[] mark_list)  //adds to ready for when student is created
     {
         System.out.println(name);
         System.out.println(code);

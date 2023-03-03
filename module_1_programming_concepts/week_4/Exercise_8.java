@@ -69,7 +69,7 @@ class Module8
     {
         return this.code;
     }
-    public String getLetterGrade(int mark)
+    public String getLetterGrade(int mark)      //method that converts inputted number grade into a letter
     {
         if(mark>=0 && mark<=39)
             return ("F");

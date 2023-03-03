@@ -2,29 +2,20 @@ import java.util.ArrayList;
 public class Exercise_3 {
     public static void main(String[] args)
     {
-        String Module_code1 = "AUG389ga93";
-        String Module_name1 = "computers";
-        Module3 mod1 = new Module3(Module_code1, Module_name1);
+        Module3 mod1 = new Module3("AUG389ga93", "computers");
 
-        String Module_code2 = "GKhsohko";
-        String Module_name2 = "books";
-        Module3 mod2 = new Module3(Module_code2, Module_name2);
+        Module3 mod2 = new Module3("GKhsohko", "books");         
 
-        String Module_code3 = "wk3j4tiTO";
-        String Module_name3 = "art";
-        Module3 mod3 = new Module3(Module_code3, Module_name3);
+        Module3 mod3 = new Module3("wk3j4tiTO", "art");
 
-        String Module_code4 = "83htuw8";
-        String Module_name4 = "tech";
-        Module3 mod4 = new Module3(Module_code4, Module_name4);
+        Module3 mod4 = new Module3("83htuw8", "tech");
 
-        String Course_name = "computer science";
-        String Course_code = "37429583";
-        Course3 course = new Course3(Course_code, Course_name, mod1, mod2, mod3, mod4);
+        Course3 course = new Course3("computer science", "37429583", mod1, mod2, mod3, mod4);
 
+        //creates modules and a course
 
-        ArrayList<Module3> modules = course.getModules();
-        for(Module3 module:modules)
+        ArrayList<Module3> modules = course.getModules();           //assigns the arraylist to a variable
+        for(Module3 module:modules)                         //loops through all variables in the arraylist and then prints them
         {
             String names = module.getName();
             String code = module.getCode();

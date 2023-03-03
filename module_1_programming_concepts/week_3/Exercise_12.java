@@ -1,13 +1,9 @@
 public class Exercise_12 {
     public static void main(String[] args)
     {
-        String Student_name = "Alex";
-        int Student_id = 37429583;
-        Student12 student = new Student12(Student_name, Student_id);
+        Student12 student = new Student12("Alex", 37429583);
 
-        String Course_code = "AUG389ga93";
-        String Course_name = "computers";
-        Course12 course = new Course12(Course_code, Course_name);
+        Course12 course = new Course12("AUG389ga93", "computers");
 
         student.enroll(course);
 

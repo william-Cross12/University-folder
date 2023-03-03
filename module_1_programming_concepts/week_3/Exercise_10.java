@@ -1,9 +1,7 @@
 public class Exercise_10 {
     public static void main(String[] args)
     {
-        String Student_name = "Alex";
-        int Student_id = 37429583;
-        Student10 student = new Student10(Student_name, Student_id);
+        Student10 student = new Student10("Alex", 37429583);
         String name = student.getName();
         int id = student.getID();
         Exercise_10.print_student(name, id);//, course);

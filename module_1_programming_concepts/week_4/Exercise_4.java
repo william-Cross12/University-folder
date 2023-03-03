@@ -2,25 +2,15 @@ import java.util.ArrayList;
 public class Exercise_4 {
     public static void main(String[] args)
     {
-        String Module_code1 = "AUG389ga93";
-        String Module_name1 = "computers";
-        Module4 mod1 = new Module4(Module_code1, Module_name1);
+        Module4 mod1 = new Module4("AUG389ga93", "computers");
 
-        String Module_code2 = "GKhsohko";
-        String Module_name2 = "books";
-        Module4 mod2 = new Module4(Module_code2, Module_name2);
+        Module4 mod2 = new Module4("GKhsohko", "books");  
 
-        String Module_code3 = "wk3j4tiTO";
-        String Module_name3 = "art";
-        Module4 mod3 = new Module4(Module_code3, Module_name3);
+        Module4 mod3 = new Module4("wk3j4tiTO", "art");
 
-        String Module_code4 = "83htuw8";
-        String Module_name4 = "tech";
-        Module4 mod4 = new Module4(Module_code4, Module_name4);
+        Module4 mod4 = new Module4("83htuw8", "tech");
 
-        String Course_name = "computer science";
-        String Course_code = "37429583";
-        Course4 course = new Course4(Course_code, Course_name, mod1, mod2, mod3, mod4);
+        Course4 course = new Course4("37429683", "computer science", mod1, mod2, mod3, mod4);
 
 
         ArrayList<Module4> modules = course.getModules();
@@ -99,7 +89,7 @@ class Student4
     private int id;
     private String name;
     private Course4 course;
-    private int[] mark = new int[4];
+    private int[] mark = new int[4];        //ads a list of length 4 to student
     
 
     public Student4(String Student_name, int Student_id)
