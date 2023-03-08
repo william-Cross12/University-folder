@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=MyWorld
+comment0.text=\n\ ZA\ WARUDO\n\ \n\ Will\n\ 1\n
+comment1.params=
+comment1.target=MyWorld()
+comment1.text=\n\ creates\ za\ warudo\n\ \n
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ displayInfo()
+comment4.params=
+comment4.target=void\ populate()
+numComments=5
