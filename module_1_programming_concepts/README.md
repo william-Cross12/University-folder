@@ -15,7 +15,9 @@ week 5: caught up with Jonathan went over a short recap powerpoint on the module
 all files in weeks 1 - 4 are part of task 1 on the assignment
 
 
-week 6
+week 6:  caught up with Jonathan over teams, made a loom video for greenfoot tasks and finished task 2 on the assignment and documented it I also submitted task 1 to the assignment and filled in what I have been doing on aptem.     7 hours
+
+
 week 7
 week 8
 week 9

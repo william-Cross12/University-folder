@@ -41,8 +41,9 @@ public class spotify_copy {
 
 
             //comment all of code
-            //add scanner validation on the options?
+            //add scanner input validation on the options?
 
+            //Compile a report which outlines how you have satisfied each of the functional requirements, with clear explanations of your coded solution along with justifications of your code design decisions.
 
 
 
