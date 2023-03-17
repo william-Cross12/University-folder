@@ -18,6 +18,9 @@ all files in weeks 1 - 4 are part of task 1 on the assignment
 week 6:  caught up with Jonathan over teams, made a loom video for greenfoot tasks and finished task 2 on the assignment and documented it I also submitted task 1 to the assignment and filled in what I have been doing on aptem.     7 hours
 
 
-week 7
+week 7:   went into university today discussed with Rowan about task 3 and what kind of game we were going to make, we then made the github repository for it and layed out what features we wanted to put in it.      7 hours
+
+
+
 week 8
 week 9
