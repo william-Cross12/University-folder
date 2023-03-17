@@ -53,8 +53,8 @@ public class spotify_copy {
                 Song new_song = new Song(name, artist, plays);      //creates new song object with user's information
 
                 song_list.addSong(new_song);
-                sc.nextLine();                  //this clears the scanner so that there is no ghost input causing a wierd scanner error (no error message but it thinks that there was an input when there wasn't and it gets caught by the error handeling in the loop and looks a bit odd)
-            }
+                sc.nextLine();                  //this clears the scanner so that there is no ghost input causing a wierd scanner error 
+            }                                   //(no error message but it thinks that there was an input when there wasn't and it gets caught by the error handeling in the loop and looks a bit odd)
 
             else if(value == 2)                             //asks user for song name and artist name and sends this information to removeSongs in Song_list class
             {
@@ -109,8 +109,8 @@ public class spotify_copy {
 
     }
     
-    public static void create_songs(Song_list song_list)            //create_songs method part of the main class that populates the Song_list arrayList with a selection of songs to allow for tests (also because it says it needs 10 songs)
-    {
+    public static void create_songs(Song_list song_list)            //create_songs method part of the main class that populates the Song_list arrayList with a selection of songs to allow for tests 
+    {                                                               //(also because 10 songs is one of teh requirenments)
         
 
         Song song0 = new Song("Believer", "Imagine Dragons", 2412190548L);
@@ -209,8 +209,9 @@ class Song_list          //defines Song_list class
         for(Song song_from_list:(this.song_collection))         //loops over everything in the arrayList
         {
 
-            if((song_from_list.displayName()).equals(input_name) && (song_from_list.displayArtist()).equals(input_artist))      //checks if the current object being looped over is the same as both the user inputs using methods from the Song class
-            {
+            if((song_from_list.displayName()).equals(input_name) && (song_from_list.displayArtist()).equals(input_artist))      //checks if the current object being looped over is the same as 
+            {                                                                                                                   //both the user inputs using methods from the Song class
+
                 this.song_collection.remove(song_from_list);                    //if both are the same then the object is removed from the ArrayList
                 System.out.println("Successfully removed song...");         //suitable message displayed
                 break;          //escapes the loop to prevent ArrayList error when continuing to loop after removing something breaks the code
