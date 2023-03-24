@@ -22,5 +22,8 @@ week 7:   went into university today discussed with Rowan about task 3 and what 
 
 
 
-week 8
+week 8:    started coding the maze game and have gotten quite far through, almost all base features have been added optional features are close to being implamented 7 hours
+
+
+
 week 9
