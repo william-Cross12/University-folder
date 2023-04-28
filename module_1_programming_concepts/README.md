@@ -42,4 +42,4 @@ week 12:    on holiday
 
 
 
-week 13:    worked on the game, optimised it more, added better icons and more sound effects. added a treasure that you need to push to the exit when you kill a ghost with an item which gives you lots of points and started working on the presentation for it
+week 13:    worked on the game, optimised it more, added better icons and more sound effects. added a treasure that you need to push to the exit when you kill a ghost with an item which gives you lots of points and started working on the presentation for it           7 hours
