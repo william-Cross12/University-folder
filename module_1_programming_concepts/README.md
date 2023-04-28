@@ -27,3 +27,19 @@ week 8:    started coding the maze game and have gotten quite far through, almos
 
 
 week 9:    continued with game project I made a time stop ability and added some other features to make the game run a bit smoother      7 hours
+
+
+
+week 10:    easter break
+
+
+
+week 11:    easter break
+
+
+
+week 12:    on holiday
+
+
+
+week 13:    worked on the game, optimised it more, added better icons and more sound effects. added a treasure that you need to push to the exit when you kill a ghost with an item which gives you lots of points and started working on the presentation for it
