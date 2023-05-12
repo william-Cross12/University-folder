@@ -46,4 +46,4 @@ week 13:    worked on the game, optimised it more, added better icons and more s
 
 
 
-week 14:    worked on the game adding some minor improvements and commenting everything. then finished making the presentation, planed how it would be presented and made demo videos for the items
+week 14:    worked on the game adding some minor improvements and commenting everything. then finished making the presentation, planed how it would be presented and made demo videos for the items             7 hours
