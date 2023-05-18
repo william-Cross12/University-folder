@@ -3,3 +3,6 @@ week 15:   started the computer architecture module and watched a
     the start of the module. then had another lesson on work based learning 
     and read a little guide to group work and wrote a reflection on it       
     7 hours
+
+
+moved to outer folder
