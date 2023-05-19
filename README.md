@@ -33,3 +33,6 @@ week 14:    worked on the game adding some minor improvements and commenting eve
 
 
 week 15:   started the computer architecture module and watched a long video full of adds on it then had a lesson on it going over the start of the module. then had another lesson on work based learning and read a little guide to group work and wrote a reflection on it           7 hours
+
+
+week 16:    watched the prelecture and then completed the worksheet on binary manipulation          7 hours
