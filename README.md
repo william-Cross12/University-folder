@@ -36,3 +36,6 @@ week 15:   started the computer architecture module and watched a long video ful
 
 
 week 16:    watched the prelecture and then completed the worksheet on binary manipulation          7 hours
+
+
+week 17:    watched a lecture video and did work sheet for the architecture module and did the pre class work for the work based learning module. then did both classes of them                     7 hours
