@@ -39,3 +39,10 @@ week 16:    watched the prelecture and then completed the worksheet on binary ma
 
 
 week 17:    watched a lecture video and did work sheet for the architecture module and did the pre class work for the work based learning module. then did both classes of them                     7 hours
+
+
+
+-------------------------------------------
+
+
+week 18:    watched the lecture video and completed the worksheet then attended the classroom session and learned some usefull information (they will give number then say how it is (unsigned) then say to convert (so I will need to know the terminology)) I also completed the pre work things for the next work based learning session     7 hours
