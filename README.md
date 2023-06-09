@@ -46,3 +46,7 @@ week 17:    watched a lecture video and did work sheet for the architecture modu
 
 
 week 18:    watched the lecture video and completed the worksheet then attended the classroom session and learned some usefull information (they will give number then say how it is (unsigned) then say to convert (so I will need to know the terminology)) I also completed the pre work things for the next work based learning session     7 hours
+
+
+
+week 19:    watched the lecture video, completed the exercises and attended the lesson for architectures also will be getting a mock test thing to look at how it works. for work based learning I completed the pre lesson tasks and attended the lesson           7 hours
