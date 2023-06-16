@@ -50,3 +50,7 @@ week 18:    watched the lecture video and completed the worksheet then attended 
 
 
 week 19:    watched the lecture video, completed the exercises and attended the lesson for architectures also will be getting a mock test thing to look at how it works. for work based learning I completed the pre lesson tasks and attended the lesson           7 hours
+
+
+
+week 20:    watched lecture video on cpu architecture, did some recap, looked into little man assembaly language, attended lesson. took a mock exam to see how how it works         7 hours
