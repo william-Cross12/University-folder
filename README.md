@@ -54,3 +54,7 @@ week 19:    watched the lecture video, completed the exercises and attended the 
 
 
 week 20:    watched lecture video on cpu architecture, did some recap, looked into little man assembaly language, attended lesson. took a mock exam to see how how it works         7 hours
+
+
+
+wekk 21: did all exercises, watched the lecture video and attended both lessons           7 hours
