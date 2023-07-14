@@ -12,6 +12,6 @@ main:				# Start of code section
 	li 	$v0, 1		# Load immediate number 1 into v0 register 
 	move 	$a0, $t3	# Copy contents of register t3 to a0
 	syscall			# System call to carry out operation
-	li 	$v0, 10		# Load immediate number 10 into v0 register
+	li 	$v0, 10		# Load immediate number 10 into v0 register (10 ends program)
 	syscall			# System call to carry out operation
 # END OF PROGRAM

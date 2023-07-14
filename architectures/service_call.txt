@@ -1,0 +1,52 @@
+$v0	:
+
+1 = int value being printed
+4 = string value being printed
+5 = user input
+10 = end of program
+
+
+If have 1, 4 or 5 in $v0 then you need to put
+What your returning into $a0 e.g:
+
+li 	$v0, 1
+	move 	$a0, $t3
+	syscal
+
+1. Loads immediate 1 into $v0
+2. Moves the number in $t3 into $a0
+3. Runs that print thing
+
+
+li 	$v0, 4
+	la 	$a0, result
+	syscall
+
+This does the same as the top one but uses 
+the string number 4, and prints the string
+Value in result
+
+
+li 	$v0, 10
+	syscall
+
+
+This ends the program
+
+
+
+li $v0, 5
+syscall	
+move $t0, $v0
+
+This will ask for a user input
+Then it will move that input to $t0
+
+
+
+
+
+Branches are for jumping around the code assembly language like
+Jumps are for things like function calls
+
+

@@ -42,9 +42,6 @@ week 17:    watched a lecture video and did work sheet for the architecture modu
 
 
 
--------------------------------------------
-
-
 week 18:    watched the lecture video and completed the worksheet then attended the classroom session and learned some usefull information (they will give number then say how it is (unsigned) then say to convert (so I will need to know the terminology)) I also completed the pre work things for the next work based learning session     7 hours
 
 
@@ -58,3 +55,17 @@ week 20:    watched lecture video on cpu architecture, did some recap, looked in
 
 
 wekk 21: did all exercises, watched the lecture video and attended both lessons           7 hours
+
+
+
+week 22: did lecture video, attended lesson, completed exam         7 hours
+
+
+
+week 23: did lecture video, attended both lessons and did exercises (logic gates)         7 hours
+
+
+-------------------------------------------
+
+
+week 24: watched lecture video, attended the lesson (week 10 architecture) and completed the exercises          7 hours
