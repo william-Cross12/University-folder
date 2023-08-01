@@ -65,11 +65,21 @@ week 22: did lecture video, attended lesson, completed exam         7 hours
 week 23: did lecture video, attended both lessons and did exercises (logic gates)         7 hours
 
 
--------------------------------------------
-
-
 week 24: watched lecture video, attended the lesson even though it was the same stuff as the video (week 10 architecture) and completed the exercises          7 hours
 
 
 
-week 25: watched 2.5 hour lecture video, attedned both lessons and completed the exercises (week 11 architecture k tables (right then left))
+week 25: watched 2.5 hour lecture video, attedned both lessons and completed the exercises (week 11 architecture k tables (right then left))        7 hours
+
+
+
+week 26: watched lecture video, attended the lesson and completed the exercies. I also started planning and writing a bit of the assignment     7 hours
+
+
+-------------------------------------------
+
+
+week 27: holiday (but also did exam during the week)
+
+
+week 28: holiday
