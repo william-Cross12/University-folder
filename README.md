@@ -76,10 +76,19 @@ week 25: watched 2.5 hour lecture video, attedned both lessons and completed the
 week 26: watched lecture video, attended the lesson and completed the exercies. I also started planning and writing a bit of the assignment     7 hours
 
 
--------------------------------------------
-
-
 week 27: holiday (but also did exam during the week)
 
 
 week 28: holiday
+
+
+-------------------------------------------
+
+
+week 29: did pre lesson activities, improved assignment using feedback recieved, attended the lecture.      7 hours
+
+
+week 30: did some assignment work (Skern week)
+
+
+week 31: holiday
