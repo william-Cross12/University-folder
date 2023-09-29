@@ -82,9 +82,6 @@ week 27: holiday (but also did exam during the week)
 week 28: holiday
 
 
--------------------------------------------
-
-
 week 29: did pre lesson activities, improved assignment using feedback recieved, attended the lecture.      7 hours
 
 
@@ -92,3 +89,20 @@ week 30: did some assignment work (Skern week)
 
 
 week 31: holiday
+
+
+-------------------------------------------
+
+
+
+week 32: submitted assignment and caught up on other university work (looking at next assignment brief, and aptem)         7 hours
+
+
+week 33:  completed pre class activities and attended the lecture       7 hours
+
+
+week 34:  started new asignmnet did a third of it and sent it to be proofread so I know how to improve it            7 hours
+
+
+
+week 35:   started web development module, attended classroom lecture, did the post classroom activity, continued with the other module assignment         7 hours
