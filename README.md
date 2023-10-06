@@ -106,3 +106,7 @@ week 34:  started new asignmnet did a third of it and sent it to be proofread so
 
 
 week 35:   started web development module, attended classroom lecture, did the post classroom activity, continued with the other module assignment         7 hours
+
+
+
+week 36:   did lesson 2 on web dev course, did task on it figured out how to upload it to intweb with filezilla. then reviewed the feedback to my assignment draft and attended the checkin and worked more on my assignment.       7 hours
