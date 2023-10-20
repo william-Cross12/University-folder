@@ -91,10 +91,6 @@ week 30: did some assignment work (Skern week)
 week 31: holiday
 
 
--------------------------------------------
-
-
-
 week 32: submitted assignment and caught up on other university work (looking at next assignment brief, and aptem)         7 hours
 
 
@@ -104,9 +100,18 @@ week 33:  completed pre class activities and attended the lecture       7 hours
 week 34:  started new asignmnet did a third of it and sent it to be proofread so I know how to improve it            7 hours
 
 
-
 week 35:   started web development module, attended classroom lecture, did the post classroom activity, continued with the other module assignment         7 hours
 
 
-
 week 36:   did lesson 2 on web dev course, did task on it figured out how to upload it to intweb with filezilla. then reviewed the feedback to my assignment draft and attended the checkin and worked more on my assignment.       7 hours
+
+
+
+-------------------------------------------
+
+
+
+week 37:    did lession 3 on web dev course, did task on it, finished assignment for work based learning module and reviewed it.        7 hours
+
+
+week 38:    did lesson 4 on web dev course and completed the task for it and started to have a look at the assignment.          7 hours
