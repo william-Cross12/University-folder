@@ -115,3 +115,6 @@ week 37:    did lession 3 on web dev course, did task on it, finished assignment
 
 
 week 38:    did lesson 4 on web dev course and completed the task for it and started to have a look at the assignment.          7 hours
+
+
+week 39:    did lesson 5 web dev course and completed the task      7 hours
