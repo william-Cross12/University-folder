@@ -118,3 +118,9 @@ week 38:    did lesson 4 on web dev course and completed the task for it and sta
 
 
 week 39:    did lesson 5 web dev course and completed the task      7 hours
+
+
+week 40:    did lesson 6 web dev and started working on assignment      7 hours
+
+
+week 41:    did lesson 7 learnt about javascript and how its used in websites and continued to work on my assignment web page       7 hours

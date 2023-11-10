@@ -1,0 +1,133 @@
+<!-- do not view on Safari web browser -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Music Quiz</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="scripts/music_quiz_script.js"></script>
+
+        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">QuizMaster</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="music.html" class="nav-link disabled">Music Quiz</a></li>
+                    <li><a href="picture.html">Picture Quiz</a></li>
+                    <li><a href="general_knowledge.html">General Knowledge Quiz</a></li>
+                    <li><a href="TV_show.html">TV Show Quiz</a></li>
+                    <li><a href="remove_ads.html">Remove Ads</a></li>
+                </ul>
+            </div>
+        </nav>
+    </head>
+
+    <body>
+        <div class="container">
+            <h3>About This Quiz</h3>
+            <p>Brief description of quiz.</p>
+        </div>
+        
+        <div class="container">
+            <p class="quiz-question">Audio Question One</p>
+            <audio controls>
+                <source src="music/doom.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="custom-select" style="width:200px;">
+                <select id="q1">
+                    <option value="0">Select Game:</option>
+                    <option value="1">Genshin Impact</option>
+                    <option value="2">DOOM</option>
+                    <option value="3">Jetpack Joyride</option>
+                    <option value="4">Honkai: Star Rail</option>
+                    <option value="5">Devil May Cry</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="quiz-question">Audio Question Two</p>
+            <audio controls>
+                <source src="music/dmc.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="custom-select" style="width:200px;">
+                <select id="q2">
+                    <option value="0">Select Game:</option>
+                    <option value="1">Genshin Impact</option>
+                    <option value="2">DOOM</option>
+                    <option value="3">Jetpack Joyride</option>
+                    <option value="4">Honkai: Star Rail</option>
+                    <option value="5">Devil May Cry</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="quiz-question">Audio Question Three</p>
+            <audio controls>
+                <source src="music/genshin.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="custom-select" style="width:200px;">
+                <select id="q3">
+                    <option value="0">Select Game:</option>
+                    <option value="1">Genshin Impact</option>
+                    <option value="2">DOOM</option>
+                    <option value="3">Jetpack Joyride</option>
+                    <option value="4">Honkai: Star Rail</option>
+                    <option value="5">Devil May Cry</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="quiz-question">Audio Question Four</p>
+            <audio controls>
+                <source src="music/jetpack.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="custom-select" style="width:200px;">
+                <select id="q4">
+                    <option value="0">Select Game:</option>
+                    <option value="1">Genshin Impact</option>
+                    <option value="2">DOOM</option>
+                    <option value="3">Jetpack Joyride</option>
+                    <option value="4">Honkai: Star Rail</option>
+                    <option value="5">Devil May Cry</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="quiz-question">Audio Question Five</p>
+            <audio controls>
+                <source src="music/StarRail.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="custom-select" style="width:200px;">
+                <select id="q5">
+                    <option value="0">Select Game:</option>
+                    <option value="1">Genshin Impact</option>
+                    <option value="2">DOOM</option>
+                    <option value="3">Jetpack Joyride</option>
+                    <option value="4">Honkai: Star Rail</option>
+                    <option value="5">Devil May Cry</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <button onclick="checkAnswers()">Submit Answers</button>
+        </div>
+        <p id="results"></p>
+
+    </body>
+</html>

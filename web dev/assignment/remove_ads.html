@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Remove Ads</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="scripts/remove_ads_script.js"></script>
+
+        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">QuizMaster</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="music.html">Music Quiz</a></li>
+                    <li><a href="picture.html">Picture Quiz</a></li>
+                    <li><a href="general_knowledge.html">General Knowledge Quiz</a></li>
+                    <li><a href="TV_show.html">TV Show Quiz</a></li>
+                    <li><a href="remove_ads.html" class="nav-link disabled">Remove Ads</a></li>
+                </ul>
+            </div>
+        </nav>
+    </head>
+
+    <body>
+
+        <div id="alert" style="display: none;" class="alert alert-success alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            Success! your request will be processed.
+        </div>
+
+        <div class="container">
+            <h3>Remove Ads by Signing up!</h3>
+            <p>Brief description of page.</p>
+        </div>
+
+        <div class="clickbait">
+            <div class="arrow"></div>
+                <form id="signUp">
+                    <label for="fname">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="lname">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="lname">Address:</label><br>
+                    <input type="text" id="address" name="address"><br>
+                    <label for="lname">National insurance number:</label><br>
+                    <input type="text" id="ni" name="ni"><br>
+                    <label for="lname">Credit card number:</label><br>
+                    <input type="text" id="cardNumber" name="cardNumber"><br><br>
+                    <input type="submit" onclick="processRemoval()" value="Submit">
+                </form>
+        </div>
+        
+        <div class="container" id="message"></div>
+        
+    </body>
+</html>
