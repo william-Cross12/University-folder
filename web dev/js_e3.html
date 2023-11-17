@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .counter {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Container to hold counters and buttons -->
+<div id="counterContainer"></div>
+
+<script>
+  // Function to create counters and buttons dynamically
+  function createCountersAndButtons(counterCount) {
+    var container = document.getElementById('counterContainer');
+
+    for (var i = 1; i <= counterCount; i++) {
+      // Create counter element
+      var counterElement = document.createElement('div');
+      counterElement.classList.add('counter');
+      counterElement.textContent = '0';
+      container.appendChild(counterElement);
+
+      // Create button element
+      var buttonElement = document.createElement('button');
+      buttonElement.textContent = 'Increase Counter ' + i;
+      buttonElement.onclick = function(counter) {
+        return function() {
+          increaseCounter(counter);
+        };
+      }(counterElement);
+      container.appendChild(buttonElement);
+    }
+  }
+
+  // Function to increase the counter value
+  function increaseCounter(counterElement) {
+    var currentCount = parseInt(counterElement.textContent);
+    counterElement.textContent = currentCount + 1;
+  }
+
+  // Create counters and buttons for 3 counters (you can change this number)
+  createCountersAndButtons(3);
+</script>
+
+</body>
+</html>
