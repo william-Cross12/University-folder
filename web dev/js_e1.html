@@ -17,16 +17,9 @@
             document.write(fruits);
         }
         */
-        function display_alert() {
-            let name1 = prompt("Please enter name:");
-            let name2 = prompt("Please enter name:");
-            let name3 = prompt("Please enter name:");
-            let names = [];
+        function output(names) {
             names.sort();
-            names.push(name1);
-            names.push(name2);
-            names.push(name3);
-            document.write("Hello " + name1 + ", there are " + name1.length + " letters in your name <br> Hello " + name2 + ", there are " + name2.length + " letters in your name <br> Hello " + name3 + ", there are " + name3.length + " letters in your name");
+            document.write("Hello " + names[0] + ", there are " + names[0].length + " letters in your name <br> Hello " + names[1] + ", there are " + names[1].length + " letters in your name <br> Hello " + names[2] + ", there are " + names[2].length + " letters in your name");
             var message = "Here is the list of names in alphabetical order:\n" + names.join("\n");
             alert(message)
             var reverseAlphabeticalOrder = names.slice().sort(function(a, b) {
@@ -35,6 +28,19 @@
             var message = "Here is the list of names in alphabetical order:\n" + reverseAlphabeticalOrder.join("\n");
             alert(message);
         }
+        function input() {
+            let names = [];
+            for (let i = 0; i < 3; i++) {
+                let name1 = prompt("Please enter name:");
+                names.push(name1);
+            }
+            return names
+        }
+        function display_alert() {
+            let names = input()
+            output(names)
+        }
+        
 
     </script>
 

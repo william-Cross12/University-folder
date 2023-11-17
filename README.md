@@ -124,3 +124,6 @@ week 40:    did lesson 6 web dev and started working on assignment      7 hours
 
 
 week 41:    did lesson 7 learnt about javascript and how its used in websites and continued to work on my assignment web page       7 hours
+
+
+week 42:    did lesson 8. learnt a lot about js from extremely long lessons     7 hours
