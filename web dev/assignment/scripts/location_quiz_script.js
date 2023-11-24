@@ -46,9 +46,38 @@ function checkCountry() {
 
 function checkCity() {
     // Get the selected city value
-    let selectedCity = document.querySelector('input[name="city"]:checked');
-    // Check if the selected city is the correct one (for demonstration purposes)
-    if (selectedCity.value === "Geneva") {
+    let selectedCity_1 = document.querySelector('input[name="city1"]:checked').value;
+    let selectedCity_2 = document.querySelector('input[name="city2"]:checked').value;
+    let selectedCity_3 = document.querySelector('input[name="city3"]:checked').value;
+    let selectedCity_4 = document.querySelector('input[name="city4"]:checked').value;
+    let selectedCity_5 = document.querySelector('input[name="city5"]:checked').value;
+    let selectedCity_6 = document.querySelector('input[name="city6"]:checked').value;
+    let selectedCity_7 = document.querySelector('input[name="city7"]:checked').value;
+    let count = 0;
+
+    if (selectedCity_1 == "New-York") {
+        count++;
+    }
+    if (selectedCity_2 == "North") {
+        count++;
+    }
+    if (selectedCity_3 == "Edinburgh") {
+        count++;
+    }
+    if (selectedCity_4 == "London") {
+        count++;
+    }
+    if (selectedCity_5 == "Tokyo") {
+        count++;
+    }
+    if (selectedCity_6 == "Amsterdam") {
+        count++;
+    }
+    if (selectedCity_7 == "Geneva") {
+        count++;
+    }
+
+    if (count == 7) {
         document.getElementById("location_results").innerHTML = "Correct";
     } else {
         document.getElementById("location_results").innerHTML = "very disappointed";

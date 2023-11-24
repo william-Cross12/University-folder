@@ -18,8 +18,8 @@
                 <ul class="nav navbar-nav">
                     <li><a href="music.html">Music Quiz</a></li>
                     <li><a href="location.html">Location Quiz</a></li>
-                    <li><a href="future_knowledge.html">Future Knowledge Quiz</a></li>
                     <li><a href="TV_show.html" class="nav-link disabled">TV Show Quiz</a></li>
+                    <li><a href="trolley_problem.html">Trolley Problem</a></li>
                     <li><a href="remove_ads.html">Remove Ads</a></li>
                 </ul>
             </div>
@@ -27,11 +27,139 @@
     </head>
 
     <body>
-        
-
         <div class="container">
             <h3>About This Page</h3>
             <p>Brief description of page.</p>
         </div>
+
+        <table>
+            <tr>
+                <td>
+                    <p class="quiz-question">Video Question One</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Oo2RKAHu-kI?end=180&rel=0" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Trivia</p>
+                        <select id="q1">
+                            <option value="0"></option>
+                            <option value="1">Genshin Impact</option>
+                            <option value="2">DOOM</option>
+                            <option value="3">Jetpack Joyride</option>
+                            <option value="4">Honkai: Star Rail</option>
+                            <option value="5">Devil May Cry</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="quiz-question">Video Question Two</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ziz6m5CeA6c?end=85&rel=0" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Trivia</p>
+                        <select id="q2">
+                            <option value="0"></option>
+                            <option value="1">Genshin Impact</option>
+                            <option value="2">DOOM</option>
+                            <option value="3">Jetpack Joyride</option>
+                            <option value="4">Honkai: Star Rail</option>
+                            <option value="5">Devil May Cry</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="quiz-question">Video Question Three</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/d4tE10rrsPs?start=100&end=130&rel=0" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Trivia</p>
+                        <select id="q3">
+                            <option value="0"></option>
+                            <option value="1">Genshin Impact</option>
+                            <option value="2">DOOM</option>
+                            <option value="3">Jetpack Joyride</option>
+                            <option value="4">Honkai: Star Rail</option>
+                            <option value="5">Devil May Cry</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="quiz-question">Video Question Four</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/N8JD_P2J24g?end=185&rel=0" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Trivia</p>
+                        <select id="q4">
+                            <option value="0"></option>
+                            <option value="1">Genshin Impact</option>
+                            <option value="2">DOOM</option>
+                            <option value="3">Jetpack Joyride</option>
+                            <option value="4">Honkai: Star Rail</option>
+                            <option value="5">Devil May Cry</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="quiz-question">Video Question Five</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/v09NYghlEbM?end=205&rel=0" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Trivia</p>
+                        <select id="q5">
+                            <option value="0"></option>
+                            <option value="1">Genshin Impact</option>
+                            <option value="2">DOOM</option>
+                            <option value="3">Jetpack Joyride</option>
+                            <option value="4">Honkai: Star Rail</option>
+                            <option value="5">Devil May Cry</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="quiz-question">Video Question Six</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/L6yE7fUE220?end=41&rel=0" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Trivia</p>
+                        <select id="q5">
+                            <option value="0"></option>
+                            <option value="1">Genshin Impact</option>
+                            <option value="2">DOOM</option>
+                            <option value="3">Jetpack Joyride</option>
+                            <option value="4">Honkai: Star Rail</option>
+                            <option value="5">Devil May Cry</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div>
+            <button onclick="checkAnswers()">Submit Answers</button>
+        </div>
+        <p id="results"></p>
+
+        
+
     </body>
 </html>

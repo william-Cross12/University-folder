@@ -17,12 +17,15 @@
 /* keeps the answer boxes close to the question */
 table {
   width: 60%;
+  margin-left: 30px;
 }
 
-
+/* gives a nice blue-green colour to quiz sub-questions */
 .sub-question {
   color: rgb(14, 122, 134);
   font-size: 19px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 
