@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="scripts/location_quiz_script.js"></script>
 
         <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
             <div class="container-fluid">
@@ -34,58 +35,157 @@
             <p>Brief description of page.</p>
         </div>
 
-        <div class="container">
-            <a href="images/USA_New-york.jpeg" target="_blank">
-                <img src="images/USA_New-york.jpeg" alt="Image failed to load" width="250">
-            </a>
+        <table>
+            <tr>
+                <td>
+                    <p class="quiz-question">Location Question One</p>
+                    <a href="images/USA_New-york.jpeg" target="_blank">
+                        <img src="images/USA_New-york.jpeg" alt="Image failed to load" width="250">
+                    </a>
+                </td>
+                <td>
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Enter Country</p>
+                        <input type="text" id="country_1">
+                    </div>
+                </td>
+                <td class="hidden">
+                    <div>
+                        This content is initially hidden.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="quiz-question">Location Question Two</p>
+                    <a href="images/Spain_North.jpeg" target="_blank">
+                        <img src="images/Spain_North.jpeg" alt="Image failed to load" width="250">
+                    </a>
+                </td>
+                <td>
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Enter Country</p>
+                        <input type="text" id="country_2">
+                    </div>
+                </td>
+                <td class="hidden">
+                    <div>
+                        This content is initially hidden.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="quiz-question">Location Question Three</p>
+                    <a href="images/Scotland_Edinburgh.jpeg" target="_blank">
+                        <img src="images/Scotland_Edinburgh.jpeg" alt="Image failed to load" width="250">
+                    </a>
+                </td>
+                <td>
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Enter Country</p>
+                        <input type="text" id="country_3">
+                    </div>
+                </td>
+                <td class="hidden">
+                    <div>
+                        This content is initially hidden.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="quiz-question">Location Question Four</p>
+                    <a href="images/England_London.jpeg" target="_blank">
+                        <img src="images/England_London.jpeg" alt="Image failed to load" width="250">
+                    </a>
+                </td>
+                <td>
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Enter Country</p>
+                        <input type="text" id="country_4">
+                    </div>
+                </td>
+                <td class="hidden">
+                    <div>
+                        This content is initially hidden.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="quiz-question">Location Question Five</p>
+                    <a href="images/Japan_Tokyo.jpeg" target="_blank">
+                        <img src="images/Japan_Tokyo.jpeg" alt="Image failed to load" width="250">
+                    </a>
+                </td>
+                <td>
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Enter Country</p>
+                        <input type="text" id="country_5">
+                    </div>
+                </td>
+                <td class="hidden">
+                    <div>
+                        This content is initially hidden.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="quiz-question">Location Question Six</p>
+                    <a href="images/Netherlands_Amsterdam.jpeg" target="_blank">
+                        <img src="images/Netherlands_Amsterdam.jpeg" alt="Image failed to load" width="250">
+                    </a>
+                </td>
+                <td>
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Enter Country</p>
+                        <input type="text" id="country_6">
+                    </div>
+                </td>
+                <td class="hidden">
+                    <div>
+                        This content is initially hidden.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="quiz-question">Location Question Seven</p>
+                    <a href="images/Switzerland_Geneva.jpeg" target="_blank">
+                        <img src="images/Switzerland_Geneva.jpeg" alt="Image failed to load" width="250">
+                    </a>
+                </td>
+                <td>
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Enter Country</p>
+                        <input type="text" id="country_7">
+                    </div>
+                </td>
+                <td class="hidden">
+                    <p class="sub-question">Select City</p>
+                    <input type="radio" id="city1" name="city" value="Zurich">
+                    <label for="city1">Zurich</label><br>
+
+                    <input type="radio" id="city2" name="city" value="Geneva">
+                    <label for="city2">Geneva</label><br>
+
+                    <input type="radio" id="city3" name="city" value="Bern">
+                    <label for="city3">Bern</label><br>
+
+                    <input type="radio" id="city4" name="city" value="Lucerne">
+                    <label for="city4">Lucerne</label><br>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <button onclick="checkCountry()">Submit Answers</button>
         </div>
-
-        <br>
-
-        <div class="container">
-            <a href="images/Spain_North.jpeg" target="_blank">
-                <img src="images/Spain_North.jpeg" alt="Image failed to load" width="250">
-            </a>
+        <p id="results"></p>
+        <div class="hidden">
+            <button onclick="checkCity()">Submit Answers</button>
         </div>
-
-        <br>
-
-        <div class="container">
-            <a href="images/Scotland_Edinburgh.jpeg" target="_blank">
-                <img src="images/Scotland_Edinburgh.jpeg" alt="Image failed to load" width="250">
-            </a>
-        </div>
-
-        <br>
-
-        <div class="container">
-            <a href="images/England_London.jpeg" target="_blank">
-                <img src="images/England_London.jpeg" alt="Image failed to load" width="250">
-            </a>
-        </div>
-
-        <br>
-
-        <div class="container">
-            <a href="images/Japan_Tokyo.jpeg" target="_blank">
-                <img src="images/Japan_Tokyo.jpeg" alt="Image failed to load" width="250">
-            </a>
-        </div>
-
-        <br>
-
-        <div class="container">
-            <a href="images/Netherlands_Amsterdam.jpeg" target="_blank">
-                <img src="images/Netherlands_Amsterdam.jpeg" alt="Image failed to load" width="250">
-            </a>
-        </div>
-
-        <br>
-
-        <div class="container">
-            <a href="images/Switzerland_Geneva.jpeg" target="_blank">
-                <img src="images/Switzerland_Geneva.jpeg" alt="Image failed to load" width="250">
-            </a>
-        </div>
+        <p id="location_results"></p>
     </body>
 </html>

@@ -4,6 +4,7 @@
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
+  margin-top: 50px;
 }
 
 /* disables the nav bar page option the user is currently in */
@@ -13,3 +14,19 @@
   color: #6c757d;
 }
 
+/* keeps the answer boxes close to the question */
+table {
+  width: 60%;
+}
+
+
+.sub-question {
+  color: rgb(14, 122, 134);
+  font-size: 19px;
+}
+
+
+/* Hide everything in this class by default */
+.hidden {
+  display: none;
+}
