@@ -37,28 +37,28 @@
 
         <div class="scenario" id="trolleyProblem_1">
             <div class="field">
-                <div id="trolley" style="bottom: 30px"></div>
-                <div class="row" id="row1"></div>
-                <div class="row" id="row2"></div>
-                <div class="row" id="row2" style="left: 200px"></div>
-                <div class="row" id="row2" style="left: 250px"></div>
+                <div class="trolley" id="trolley" style="bottom: 30px"></div>
+                <div class="row1" id="row1"></div>
+                <div class="row2" id="row2"></div>
+                <div class="row2" id="row3" style="left: 200px"></div>
+                <div class="row2" id="row4" style="left: 250px"></div>
             </div>
-            <button onclick="pullLever('trolleyProblem_1')">Pull Lever</button>
-            <button onclick="startTrolley('trolleyProblem_1')">Start Simulation</button>
-            <button onClick="reset('trolleyProblem_1')">Reset Simulation</button>
+            <button onclick="pullLever(this)">Pull Lever</button>
+            <button onclick="startTrolley(this)">Start Simulation</button>
+            <button onClick="resetSimulation(this)">Reset Simulation</button>
         </div>
 
         <div class="scenario" id="trolleyProblem_2">
             <div class="field">
-                <div id="trolley" style="bottom: 30px"></div>
-                <div class="row" id="row1"></div>
-                <div class="row" id="row2"></div>
-                <div class="row" id="row2" style="left: 200px"></div>
-                <div class="row" id="row2" style="left: 250px"></div>
+                <div class="trolley" id="trolley" style="bottom: 30px"></div>
+                <div class="row1" id="row1"></div>
+                <div class="row1" id="row2" style="left: 200px"></div>
+                <div class="row1" id="row3" style="left: 250px"></div>
+                <div class="row2" id="row4"></div>
             </div>
-            <button onclick="pullLever('trolleyProblem_2')">Pull Lever</button>
-            <button onclick="startTrolley('trolleyProblem_2')">Start Simulation</button>
-            <button onClick="reset('trolleyProblem_2')">Reset Simulation</button>
+            <button onclick="pullLever(this)">Pull Lever</button>
+            <button onclick="startTrolley(this)">Start Simulation</button>
+            <button onClick="resetSimulation(this)">Reset Simulation</button>
         </div>
 
         <!--

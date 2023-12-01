@@ -11,7 +11,7 @@
     margin-bottom: 20px;
 }
 
-#trolley {
+.trolley {
     position: absolute;
     width: 50px;
     height: 30px;
@@ -21,20 +21,20 @@
     z-index: 2; /* ensures the trolley appears above everything else */
 }
 
-.row {
+.row1 {
     position: absolute;
     width: 30px;
     height: 30px;
     background-color: blue;
-    bottom: 0;
-}
-
-#row1 {
-    left: 150px;
     bottom: 30px;
+    left: 150px;
 }
 
-#row2 {
-    left: 150px;
+.row2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
     bottom: 130px;
+    left: 150px;
 }
