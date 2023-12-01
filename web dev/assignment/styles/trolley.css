@@ -1,0 +1,40 @@
+.scenario {
+    text-align: center;
+    padding: 40px;
+}
+
+.field {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+
+#trolley {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background-color: purple;
+    bottom: 30px;
+    left: 10px;
+    z-index: 2; /* ensures the trolley appears above everything else */
+}
+
+.row {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    bottom: 0;
+}
+
+#row1 {
+    left: 150px;
+    bottom: 30px;
+}
+
+#row2 {
+    left: 150px;
+    bottom: 130px;
+}

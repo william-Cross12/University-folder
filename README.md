@@ -106,11 +106,6 @@ week 35:   started web development module, attended classroom lecture, did the p
 week 36:   did lesson 2 on web dev course, did task on it figured out how to upload it to intweb with filezilla. then reviewed the feedback to my assignment draft and attended the checkin and worked more on my assignment.       7 hours
 
 
-
--------------------------------------------
-
-
-
 week 37:    did lession 3 on web dev course, did task on it, finished assignment for work based learning module and reviewed it.        7 hours
 
 
@@ -126,7 +121,15 @@ week 40:    did lesson 6 web dev and started working on assignment      7 hours
 week 41:    did lesson 7 learnt about javascript and how its used in websites and continued to work on my assignment web page       7 hours
 
 
+
+-------------------------------------------
+
+
+
 week 42:    did lesson 8. learnt a lot about js from extremely long lessons     7 hours
 
 
 week 43:    did lesson 9 web dev and did more on my assignment      7 hours
+
+
+week 44:    did lesson 10 web dev and did more of my assignment     7 hours

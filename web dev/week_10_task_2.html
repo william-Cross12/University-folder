@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details Validation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="contactForm">
+        <label for="fullName">Full Name (First Name Initial Last Name):</label>
+        <input type="text" id="fullName" name="fullName" placeholder="John D Doe" required pattern="[A-Za-z]+\s[A-Za-z]\s[A-Za-z]+">
+
+        <label for="address">Address (HouseNumber Street):</label>
+        <input type="text" id="address" name="address" placeholder="123 Main St" required>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" placeholder="City" required>
+
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" name="postcode" placeholder="AB12 3CD" required 
+               pattern="^([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9]?[A-Za-z])))) [0-9][A-Za-z]{2})$">
+
+        <button type="button" onclick="validateContactDetails()">Submit</button>
+    </form>
+
+    <script>
+        function validateContactDetails() {
+            var form = document.getElementById('contactForm');
+
+            if (form.checkValidity()) {
+                alert('Form submission successful!');
+            } else {
+                alert('Please fill out the form correctly.');
+            }
+        }
+    </script>
+
+</body>
+</html>
