@@ -133,3 +133,6 @@ week 43:    did lesson 9 web dev and did more on my assignment      7 hours
 
 
 week 44:    did lesson 10 web dev and did more of my assignment     7 hours
+
+
+week 45:    spent far too long in a lesson that over ran so had less time than I would have liked to work on my assignment      7 hours

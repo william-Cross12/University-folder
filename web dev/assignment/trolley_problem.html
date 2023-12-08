@@ -36,6 +36,10 @@
         </div>
 
         <div class="scenario" id="trolleyProblem_1">
+            <p>
+                - On the top track there are 3 stranger, <br>
+                - On the bottom track there is 1 stranger.
+            </p>
             <div class="field">
                 <div class="trolley" id="trolley" style="bottom: 30px"></div>
                 <div class="row1" id="row1"></div>
@@ -49,6 +53,10 @@
         </div>
 
         <div class="scenario" id="trolleyProblem_2">
+            <p>
+                - On the top track there is one stranger, <br>
+                - On the bottom track there are 3 strangers.
+            </p>
             <div class="field">
                 <div class="trolley" id="trolley" style="bottom: 30px"></div>
                 <div class="row1" id="row1"></div>
@@ -61,8 +69,36 @@
             <button onClick="resetSimulation(this)">Reset Simulation</button>
         </div>
 
-        <!--
-            trolley problem using objects and arrays in js
-        -->
+        <div class="scenario" id="trolleyProblem_3">
+            <p>
+                - On the top track is a person of 66 who is 3 days from retirement, <br>
+                - On the bottom track there is a child of 4 with a loving family.
+            </p>
+            <div class="field">
+                <div class="trolley" id="trolley" style="bottom: 30px"></div>
+                <div class="row1" id="row1"></div>
+                <div class="row2" id="row2"></div>
+            </div>
+            <button onclick="pullLever(this)">Pull Lever</button>
+            <button onclick="startTrolley(this)">Start Simulation</button>
+            <button onClick="resetSimulation(this)">Reset Simulation</button>
+        </div>
+
+        <div class="scenario" id="trolleyProblem_4">
+            <p>
+                - On the top track there is a child of 4 with a loving family, <br>
+                - On the bottom track is a person of 66 who is 3 days from retirement.
+            </p>
+            <div class="field">
+                <div class="trolley" id="trolley" style="bottom: 30px"></div>
+                <div class="row1" id="row1"></div>
+                <div class="row2" id="row4"></div>
+            </div>
+            <button onclick="pullLever(this)">Pull Lever</button>
+            <button onclick="startTrolley(this)">Start Simulation</button>
+            <button onClick="resetSimulation(this)">Reset Simulation</button>
+        </div>
+        <button onclick="Results()">Get Results</button>
+
     </body>
 </html>
