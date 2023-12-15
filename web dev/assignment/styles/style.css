@@ -28,8 +28,77 @@ table {
   margin-left: 10px;
 }
 
+/* makes all paragraph content text the same blue colour for consistency */
+p {
+  color: rgb(14, 122, 134);
+}
+
+/* info mixed with content allows ads to be displayed easily on the page */
+.info {
+  padding: 10px;
+  display: flex; /* Use flex container */
+  justify-content: flex-end; /* Align items to the end (right side) of the container */
+  align-items: center; /* Center items vertically within the container */
+}
+
+td {
+  padding: 10px;
+}
+
+/* makes sure the image stays on the ad stays on the right of the page and if the screen
+is too small it makes sure the ad is displayed */
+.content {
+  flex: 1; /* Let the content flex to take remaining space */
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* designates where the ad is displayed (on the right) and gives it nice smooth edges */
+.ad {
+  float: right; 
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+}
 
 /* Hide everything in this class by default */
 .hidden {
   display: none;
+}
+
+/* rounds the corners of images nicely */
+img {
+  border-radius: 8px;
+}
+
+/* rounds the corners of images nicely */
+iframe {
+  border-radius: 8px;
+}
+
+/* dictates how the colour changes */
+@keyframes colorChange {
+  0%, 100% { 
+    color: purple; 
+  }
+  20% { 
+    color: blue; 
+  }
+  40% { 
+    color: green; 
+  }
+  60% { 
+    color: orange; 
+  }
+  80% { 
+    color: red; 
+  }
+}
+
+/* changes colour from the selected colours in the keyframes */
+.colour-change {
+  padding: 10px;
+  margin: 5px;
+  font-size: 30px;
+  animation: colorChange 6s infinite; /* 6s duration, infinite loop */
 }
