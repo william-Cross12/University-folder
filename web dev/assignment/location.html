@@ -28,7 +28,7 @@
     </head>
 
     <body>
-        
+        <div id="alert-container"></div>
 
         <div class="container">
             <h2>About The Location Quiz</h2>
@@ -235,12 +235,11 @@
             </tr>
         </table>
         <div>
-            <button onclick="checkCountry()">Submit Answers</button>
+            <button id="firstStage" class="submit" onclick="checkCountry()">Submit Answers</button>
         </div>
-        <p id="results"></p>
         <div class="hidden">
-            <button onclick="checkCity()">Submit Answers</button>
+            <button class="submit" onclick="checkCity()">Submit Answers</button>
         </div>
-        <p id="location_results"></p>
+        <p class="container" id="location_results"></p>
     </body>
 </html>

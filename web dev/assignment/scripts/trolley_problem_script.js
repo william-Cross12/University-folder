@@ -131,6 +131,11 @@ function Results() {
     const ids = ["trolleyProblem_1", "trolleyProblem_2", "trolleyProblem_3", "trolleyProblem_4"];
     let totalDeaths = 0
     let positionCount = 0
+    let resultsElement = document.getElementById("results");
+
+    let returnText = "<p style='font-size: 50px;'>Results:</p><br>"
+    let basicReturnText = returnText + "<p style='font-size: 30px;'>You're' a... "
+
     for (const id of ids) {
         if (!scenariosInformation[id]) {
             console.log("FILL IN THE THINGS FIRST")
@@ -142,13 +147,13 @@ function Results() {
         }
     }
     if (positionCount === 4) {
-        console.log("bystander")
+        resultsElement.innerHTML = basicReturnText + "<span style='color: rgb(13, 47, 134);'>bystander.</span></p> <p style='font-size: 30px;'>Total deaths = <span style='color: red;'>" + totalDeaths + "</span></p>";
     }
     else if (totalDeaths === 8) {
-        console.log("sadist")
+        resultsElement.innerHTML = basicReturnText + "<span style='color: rgb(13, 47, 134);'>sadist.</span></p> <p style='font-size: 30px;'>Total deaths = <span style='color: red;'>" + totalDeaths + "</span></p>";
     }
     else if (totalDeaths === 4) {
-        console.log("totalitarian")
+        resultsElement.innerHTML = basicReturnText + "<span style='color: rgb(13, 47, 134);'>totalitarian.</span></p> <p style='font-size: 30px;'>Total deaths = <span style='color: red;'>" + totalDeaths + "</span></p>";
     }
     else {
         let deadChild = 0;
@@ -165,13 +170,13 @@ function Results() {
         }
 
         if (deadChild > deadPensioner) {
-            console.log("poor child")
+            resultsElement.innerHTML = returnText + "<p style='font-size: 30px;'>2 children have died.... </p><p style='font-size: 30px;'>Total deaths = <span style='color: red;'>" + totalDeaths + "</span></p>";
         }
         else if (deadPensioner > deadChild) {
-            console.log("just 3 days to retirement...")
+            resultsElement.innerHTML = returnText + "<p style='font-size: 30px;'>2 pensioners have died.... </p><p style='font-size: 30px;'>Total deaths = <span style='color: red;'>" + totalDeaths + "</span></p>";
         }
         else {
-            console.log("perfectly balanced")
+            resultsElement.innerHTML = returnText + "<p style='font-size: 30px;'>the universe is in balance.... </p><p style='font-size: 30px;'>Total deaths = <span style='color: red;'>" + totalDeaths + "</span></p>";
         }
     }
     

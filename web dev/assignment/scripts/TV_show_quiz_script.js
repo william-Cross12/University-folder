@@ -1,5 +1,23 @@
+function showAlert(message, type) {
+    // Remove any existing alerts
+    $('.alert').remove();
+  
+    // Create a new alert element
+    const alertElement = $('<div class="alert alert-dismissible" role="alert"></div>');
+    alertElement.addClass(type); // Add the Bootstrap class for the alert type
+  
+    // Add the message to the alert
+    alertElement.text(message);
+  
+  
+    // Append the alert to the container
+    $('#alert-container').append(alertElement);
+}
+
+
 function checkAnswers() {
     let q1, q2, q3, q4, q5, q6, count;
+    let resultsElement = document.getElementById("results");
     count = 0;
     q1 = document.getElementById("q1").value;
     q2 = document.getElementById("q2").value;
@@ -28,8 +46,14 @@ function checkAnswers() {
     }
 
     if (count == 6) {
-        document.getElementById("results").innerHTML = "congratulations";
+        showAlert('You got 6/6 correct!', 'alert-success');
+        resultsElement.innerHTML = "<p style='font-size: 50px; color: green;'>SUCCESS!!</p>";
+    } 
+    else if (count > 0) {
+        showAlert("You only got " + count + "/6 correct.", "alert-warning");
+        resultsElement.innerHTML = "<p style='font-size: 50px; color: red;'>FAIL</p>";
     } else {
-        document.getElementById("results").innerHTML = "very disappointed";
+        showAlert("You only got 0/6 correct. Failure!!", "alert-danger");
+        resultsElement.innerHTML = "<p style='font-size: 50px; color: red;'>FAIL</p>";
     }
 }

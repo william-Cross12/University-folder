@@ -1,40 +1,54 @@
 .scenario {
-    text-align: left;
-    padding: 40px;
+  text-align: left;
+  padding: 40px;
 }
 
 .field {
-    position: relative;
-    width: 400px;
-    height: 200px;
-    background-color: #ccc;
-    margin-bottom: 20px;
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background-color: #ccc;
+  margin-bottom: 20px;
 }
 
 .trolley {
-    position: absolute;
-    width: 50px;
-    height: 30px;
-    background-color: purple;
-    bottom: 30px;
-    left: 10px;
-    z-index: 2; /* ensures the trolley appears above everything else */
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  background-color: purple;
+  bottom: 30px;
+  left: 10px;
+  z-index: 2; /* ensures the trolley appears above everything else */
 }
 
 .row1 {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: blue;
-    bottom: 30px;
-    left: 150px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  bottom: 30px;
+  left: 150px;
 }
 
 .row2 {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: blue;
-    bottom: 130px;
-    left: 150px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  bottom: 130px;
+  left: 150px;
+}
+
+.button {
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: rgb(13, 47, 134);
+  font-size: 20px;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: rgb(14, 122, 134);
 }

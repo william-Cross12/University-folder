@@ -1,5 +1,22 @@
+function showAlert(message, type) {
+    // Remove any existing alerts
+    $('.alert').remove();
+  
+    // Create a new alert element
+    const alertElement = $('<div class="alert alert-dismissible" role="alert"></div>');
+    alertElement.addClass(type); // Add the Bootstrap class for the alert type
+  
+    // Add the message to the alert
+    alertElement.text(message);
+  
+  
+    // Append the alert to the container
+    $('#alert-container').append(alertElement);
+}
+
 function checkCountry() {
     let country_1, country_2, country_3, country_4, country_5, country_6, country_7, count;
+    let resultsElement = document.getElementById("location_results");
     count = 0;
     country_1 = document.getElementById("country_1").value;
     country_2 = document.getElementById("country_2").value;
@@ -33,13 +50,25 @@ function checkCountry() {
     }
 
     if (count == 7) {
-        document.getElementById("results").innerHTML = "congratulations";
+        showAlert('You got 7/7 correct! Next Questions!', 'alert-success');
         // Loop through each hidden table cell and make it visible
         hiddenCells.forEach(function(cell) {
             cell.classList.remove("hidden"); // Remove the "hidden" class
         });
+
+        // get the first button
+        var firstStage = document.getElementById("firstStage");
+        // Add the "hidden" class to the button
+        firstStage.classList.add("hidden");
+
+        resultsElement.innerHTML = "";
+
+    } else if (count > 0) {
+        showAlert("You only got " + count + "/7 correct.", "alert-warning");
+        resultsElement.innerHTML = "<p style='font-size: 50px; color: red;'>FAIL</p>";
     } else {
-        document.getElementById("results").innerHTML = "very disappointed";
+        showAlert("You only got 0/7 correct. Failure!!", "alert-danger");
+        resultsElement.innerHTML = "<p style='font-size: 50px; color: red;'>FAIL</p>";
     }
 }
 
@@ -54,6 +83,7 @@ function checkCity() {
     let selectedCity_6 = document.querySelector('input[name="city6"]:checked').value;
     let selectedCity_7 = document.querySelector('input[name="city7"]:checked').value;
     let count = 0;
+    let resultsElement = document.getElementById("location_results");
 
     if (selectedCity_1 == "New-York") {
         count++;
@@ -78,8 +108,14 @@ function checkCity() {
     }
 
     if (count == 7) {
-        document.getElementById("location_results").innerHTML = "Correct";
+        showAlert('You got 7/7 correct!', 'alert-success');
+        resultsElement.innerHTML = "<p style='font-size: 50px; color: green;'>SUCCESS!!</p>";
+    } 
+    else if (count > 0) {
+        showAlert("You only got " + count + "/7 correct.", "alert-warning");
+        resultsElement.innerHTML = "<p style='font-size: 50px; color: red;'>FAIL</p>";
     } else {
-        document.getElementById("location_results").innerHTML = "very disappointed";
+        showAlert("You only got 0/7 correct. Failure!!", "alert-danger");
+        resultsElement.innerHTML = "<p style='font-size: 50px; color: red;'>FAIL</p>";
     }
 }

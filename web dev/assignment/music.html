@@ -29,6 +29,8 @@
     </head>
 
     <body>
+        <div id="alert-container"></div>
+
         <div class="container">
             <h2>About The Music Quiz</h2>
             <p>After listening to a section of a song you select the video game you think it is from. <br>After selecting all of your answers hit submit to see if you where right!</p>
@@ -161,10 +163,13 @@
             </tr>
         </table>
 
+        <br>
+
         <div>
-            <button onclick="checkAnswers()">Submit Answers</button>
+            <button class="submit" onclick="checkAnswers()">Submit Answers</button>
         </div>
-        <p id="results"></p>
+
+        <p class="container" id="results"></p>
 
     </body>
 </html>
