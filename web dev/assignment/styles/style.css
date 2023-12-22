@@ -41,7 +41,10 @@ p {
   align-items: center; /* Center items vertically within the container */
 }
 
-td {
+/* alters the spacing between questions for the quizzes
+needed to be done with the id method as just changing the td of the HTML does
+not work with padding */
+#td {
   padding: 10px;
 }
 
@@ -53,9 +56,8 @@ is too small it makes sure the ad is displayed */
   overflow-x: hidden;
 }
 
-/* designates where the ad is displayed (on the right) and gives it nice smooth edges */
+/* gives the ad nice smooth edges and its spacing */
 .ad {
-  float: right; 
   margin: 20px;
   padding: 10px;
   border-radius: 8px;
@@ -71,12 +73,12 @@ img {
   border-radius: 8px;
 }
 
-/* rounds the corners of images nicely */
+/* rounds the corners of videos nicely */
 iframe {
   border-radius: 8px;
 }
 
-/* dictates how the colour changes */
+/* dictates how the colour changes at which position in the animation */
 @keyframes colorChange {
   0%, 100% { 
     color: black; 
@@ -103,6 +105,7 @@ iframe {
   animation: colorChange 6s infinite; /* 6s duration, infinite loop */
 }
 
+/* creates the style for the submit buttons across the page */
 .submit {
   padding: 10px;
   margin: 10px;
@@ -113,10 +116,12 @@ iframe {
   transition-duration: 0.4s;
 }
 
+/* when the button is hovered over it changes colour */
 .submit:hover {
   background-color: rgb(14, 122, 134);
 }
 
+/* makes the drop down selectors have no boarders so it is just a floating arrow */
 select {
   border: 6px solid transparent;
   background-color: white;

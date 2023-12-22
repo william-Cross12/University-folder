@@ -2,15 +2,23 @@
 
 <html>
     <head>
+        <!-- Document title and meta tags for character set and viewport -->
         <title>Location Quiz</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Custom universal stylesheet -->
         <link rel="stylesheet" type="text/css" href="styles/style.css">
+        
+        <!-- Bootstrap CSS and jQuery/Bootstrap JS libraries -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <!-- Custom script for this webpage -->
         <script src="scripts/location_quiz_script.js"></script>
 
+        <!-- navigation bar current page is disabled -->
         <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -28,29 +36,35 @@
     </head>
 
     <body>
+        <!-- space for bootstrap alert to be shown -->
         <div id="alert-container"></div>
 
+        <!-- Webpage information container -->
         <div class="container">
             <h2>About The Location Quiz</h2>
             <p>You have one photo per question (taken by the quiz's author), <br> and you need to correctly guess the country the pictures are from.</p>
             <h3 class="hidden">Now you must correctly decide the location in the country</h3>
         </div>
 
+        <!-- Table structure for location quiz questions -->
         <table>
             <tr>
-                <td>
+                <!-- Question One -->
+                <td id="td">
                     <p class="quiz-question">Location Question One</p>
                     <a href="images/USA_New-york.jpeg" target="_blank">
                         <img src="images/USA_New-york.jpeg" alt="Image failed to load" width="250">
                     </a>
                 </td>
-                <td>
+                <td id="td">
+                    <!-- input field for guessing the country -->
                     <div class="custom-select" style="width:200px;">
                         <p class="sub-question">Enter Country</p>
                         <input type="text" id="country_1">
                     </div>
                 </td>
                 <td class="hidden">
+                    <!-- Hidden second part to question -->
                     <p class="sub-question">Select City</p>
                     <input type="radio" id="city1" name="city1" value="New-York">
                     <label for="city1">New-York</label><br>
@@ -65,20 +79,33 @@
                     <label for="city4">Chicago</label><br>
                 </td>
             </tr>
+
             <tr>
-                <td>
+                <!-- Ad space -->
+                <td id="td">
+                    <a href="https://metalgear.fandom.com/wiki/Steven_Armstrong" target="_blank" class="ad">
+                        <img src="ads/armstrong_ad.jpeg" alt="vote for senator armstrong" width="250">
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Question Two -->
+                <td id="td">
                     <p class="quiz-question">Location Question Two</p>
                     <a href="images/Spain_North.jpeg" target="_blank">
                         <img src="images/Spain_North.jpeg" alt="Image failed to load" width="250">
                     </a>
                 </td>
-                <td>
+                <td id="td">
+                    <!-- input field for guessing the country -->
                     <div class="custom-select" style="width:200px;">
                         <p class="sub-question">Enter Country</p>
                         <input type="text" id="country_2">
                     </div>
                 </td>
                 <td class="hidden">
+                    <!-- Hidden second part to question -->
                     <p class="sub-question">Select Area</p>
                     <input type="radio" id="city1" name="city2" value="East">
                     <label for="city1">East</label><br>
@@ -94,19 +121,22 @@
                 </td>
             </tr>
             <tr>
-                <td>
+                <!-- Question Three -->
+                <td id="td">
                     <p class="quiz-question">Location Question Three</p>
                     <a href="images/Scotland_Edinburgh.jpeg" target="_blank">
                         <img src="images/Scotland_Edinburgh.jpeg" alt="Image failed to load" width="250">
                     </a>
                 </td>
-                <td>
+                <td id="td">
+                    <!-- input field for guessing the country -->
                     <div class="custom-select" style="width:200px;">
                         <p class="sub-question">Enter Country</p>
                         <input type="text" id="country_3">
                     </div>
                 </td>
                 <td class="hidden">
+                    <!-- Hidden second part to question -->
                     <p class="sub-question">Select City</p>
                     <input type="radio" id="city1" name="city3" value="Glasgow">
                     <label for="city1">Glasgow</label><br>
@@ -121,20 +151,33 @@
                     <label for="city4">Aberdeen</label><br>
                 </td>
             </tr>
+
             <tr>
-                <td>
+                <!-- Ad space -->
+                <td id="td">
+                    <a href="https://www.gov.uk/after-a-death/arrange-the-funeral" target="_blank" class="ad">
+                        <img src="ads/funeral_ad.jpeg" alt="choose our home to roast you!" width="250">
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Question Four -->
+                <td id="td">
                     <p class="quiz-question">Location Question Four</p>
                     <a href="images/England_London.jpeg" target="_blank">
                         <img src="images/England_London.jpeg" alt="Image failed to load" width="250">
                     </a>
                 </td>
-                <td>
+                <td id="td">
+                    <!-- input field for guessing the country -->
                     <div class="custom-select" style="width:200px;">
                         <p class="sub-question">Enter Country</p>
                         <input type="text" id="country_4">
                     </div>
                 </td>
                 <td class="hidden">
+                    <!-- Hidden second part to question -->
                     <p class="sub-question">Select City</p>
                     <input type="radio" id="city1" name="city4" value="London">
                     <label for="city1">London</label><br>
@@ -150,19 +193,22 @@
                 </td>
             </tr>
             <tr>
-                <td>
+                <!-- Question Five -->
+                <td id="td">
                     <p class="quiz-question">Location Question Five</p>
                     <a href="images/Japan_Tokyo.jpeg" target="_blank">
                         <img src="images/Japan_Tokyo.jpeg" alt="Image failed to load" width="250">
                     </a>
                 </td>
-                <td>
+                <td id="td">
+                    <!-- input field for guessing the country -->
                     <div class="custom-select" style="width:200px;">
                         <p class="sub-question">Enter Country</p>
                         <input type="text" id="country_5">
                     </div>
                 </td>
                 <td class="hidden">
+                    <!-- Hidden second part to question -->
                     <p class="sub-question">Select City</p>
                     <input type="radio" id="city1" name="city5" value="Osaka">
                     <label for="city1">Osaka</label><br>
@@ -177,20 +223,34 @@
                     <label for="city4">Yokohama</label><br>
                 </td>
             </tr>
+
             <tr>
-                <td>
+                <!-- Ad space with remove ads option -->
+                <td id="td">
+                    <a href="remove_ads.html">(Remove Ads)</a>
+                    <a href="https://en.wikipedia.org/wiki/Titanic" target="_blank" class="ad">
+                        <img src="ads/film_ad.jpeg" alt="watch the titanic" width="250">
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Question Six -->
+                <td id="td">
                     <p class="quiz-question">Location Question Six</p>
                     <a href="images/Netherlands_Amsterdam.jpeg" target="_blank">
                         <img src="images/Netherlands_Amsterdam.jpeg" alt="Image failed to load" width="250">
                     </a>
                 </td>
-                <td>
+                <td id="td">
+                    <!-- input field for guessing the country -->
                     <div class="custom-select" style="width:200px;">
                         <p class="sub-question">Enter Country</p>
                         <input type="text" id="country_6">
                     </div>
                 </td>
                 <td class="hidden">
+                    <!-- Hidden second part to question -->
                     <p class="sub-question">Select City</p>
                     <input type="radio" id="city1" name="city6" value="Utrecht">
                     <label for="city1">Utrecht</label><br>
@@ -206,19 +266,22 @@
                 </td>
             </tr>
             <tr>
-                <td>
+                <!-- Question Seven -->
+                <td id="td">
                     <p class="quiz-question">Location Question Seven</p>
                     <a href="images/Switzerland_Geneva.jpeg" target="_blank">
                         <img src="images/Switzerland_Geneva.jpeg" alt="Image failed to load" width="250">
                     </a>
                 </td>
-                <td>
+                <td id="td">
+                    <!-- input field for guessing the country -->
                     <div class="custom-select" style="width:200px;">
                         <p class="sub-question">Enter Country</p>
                         <input type="text" id="country_7">
                     </div>
                 </td>
                 <td class="hidden">
+                    <!-- Hidden second part to question -->
                     <p class="sub-question">Select City</p>
                     <input type="radio" id="city1" name="city7" value="Zurich">
                     <label for="city1">Zurich</label><br>
@@ -234,6 +297,8 @@
                 </td>
             </tr>
         </table>
+
+        <!-- Submit buttons and return display area -->
         <div>
             <button id="firstStage" class="submit" onclick="checkCountry()">Submit Answers</button>
         </div>

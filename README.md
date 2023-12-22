@@ -139,3 +139,6 @@ week 45:    spent far too long in a lesson that over ran so had less time than I
 
 
 week 46:    did the last lesson on the web dev course and continued work on my assignment       7 hours
+
+
+week 47:    finished coding the website assignment. All that is left is the wireframe, hierarchy, description, 1500 word essay and the video. This sounds like a lot no that I write it        7 hours

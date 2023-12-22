@@ -2,15 +2,23 @@
 
 <html>
     <head>
+        <!-- Document title and meta tags for character set and viewport -->
         <title>TV Show Quiz</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Custom universal stylesheet -->
         <link rel="stylesheet" type="text/css" href="styles/style.css">
+        
+        <!-- Bootstrap CSS and jQuery/Bootstrap JS libraries -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <!-- Custom script for this webpage -->
         <script src="scripts/TV_show_quiz_script.js"></script>
 
+        <!-- navigation bar current page is disabled -->
         <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -28,20 +36,25 @@
     </head>
 
     <body>
+        <!-- space for bootstrap alert to be shown -->
         <div id="alert-container"></div>
 
+        <!-- Webpage information container -->
         <div class="container">
             <h2>About The TV Show Quiz</h2>
             <p>You will get a clip from a TV show and you will need to answer a trivia question on each.</p>
         </div>
 
+        <!-- Table structure for TV show quiz questions -->
         <table>
             <tr>
-                <td>
+                <!-- Question One -->
+                <td id="td">
                     <p class="quiz-question">Video Question One</p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/Oo2RKAHu-kI?end=180&rel=0" allowfullscreen></iframe>
                 </td>
-                <td>
+                <td id="td">
+                    <!-- input field for answering the trivia question -->
                     <div class="custom-select" style="width:200px;">
                         <p class="sub-question">Trivia</p>
                         <p>Which incarnation of the doctor is the one in the video?</p>
@@ -58,11 +71,22 @@
             </tr>
 
             <tr>
-                <td>
+                <!-- Ad space -->
+                <td id="td">
+                    <a href="https://en.wikipedia.org/wiki/Titanic" target="_blank" class="ad">
+                        <img src="ads/film_ad.jpeg" alt="watch the titanic" width="250">
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Question Two -->
+                <td id="td">
                     <p class="quiz-question">Video Question Two</p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/Ziz6m5CeA6c?end=85&rel=0" allowfullscreen></iframe>
                 </td>
-                <td>
+                <td id="td">
+                    <!-- input field for answering the trivia question -->
                     <div class="custom-select" style="width:200px;">
                         <p class="sub-question">Trivia</p>
                         <p>Who is Gideon?</p>
@@ -79,11 +103,13 @@
             </tr>
 
             <tr>
-                <td>
+                <!-- Question Three -->
+                <td id="td">
                     <p class="quiz-question">Video Question Three</p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/d4tE10rrsPs?start=100&end=130&rel=0" allowfullscreen></iframe>
                 </td>
-                <td>
+                <td id="td">
+                    <!-- input field for answering the trivia question -->
                     <div class="custom-select" style="width:200px;">
                         <p class="sub-question">Trivia</p>
                         <p>Who is Tanya?</p>
@@ -100,11 +126,22 @@
             </tr>
 
             <tr>
-                <td>
+                <!-- Ad space -->
+                <td id="td">
+                    <a href="https://metalgear.fandom.com/wiki/Steven_Armstrong" target="_blank" class="ad">
+                        <img src="ads/armstrong_ad.jpeg" alt="vote for senator armstrong" width="250">
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Question Four -->
+                <td id="td">
                     <p class="quiz-question">Video Question Four</p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/N8JD_P2J24g?end=185&rel=0" allowfullscreen></iframe>
                 </td>
-                <td>
+                <td id="td">
+                    <!-- input field for answering the trivia question -->
                     <div class="custom-select" style="width:200px;">
                         <p class="sub-question">Trivia</p>
                         <p>When was David Attenborough born?</p>
@@ -121,11 +158,13 @@
             </tr>
 
             <tr>
-                <td>
+                <!-- Question Five -->
+                <td id="td">
                     <p class="quiz-question">Video Question Five</p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/v09NYghlEbM?end=205&rel=0" allowfullscreen></iframe>
                 </td>
-                <td>
+                <td id="td">
+                    <!-- input field for answering the trivia question -->
                     <div class="custom-select" style="width:200px;">
                         <p class="sub-question">Trivia</p>
                         <p>How long is the longest king cobra?</p>
@@ -142,11 +181,23 @@
             </tr>
 
             <tr>
-                <td>
+                <!-- Ad space with remove ads option -->
+                <td id="td">
+                    <a href="remove_ads.html">(Remove Ads)</a>
+                    <a href="https://www.gov.uk/after-a-death/arrange-the-funeral" target="_blank" class="ad">
+                        <img src="ads/funeral_ad.jpeg" alt="choose our home to roast you!" width="250">
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Question Six -->
+                <td id="td">
                     <p class="quiz-question">Video Question Six</p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/L6yE7fUE220?end=41&rel=0" allowfullscreen></iframe>
                 </td>
-                <td>
+                <td id="td">
+                    <!-- input field for answering the trivia question -->
                     <div class="custom-select" style="width:200px;">
                         <p class="sub-question">Trivia</p>
                         <p>What is baby Yoda's name?</p>
@@ -163,6 +214,7 @@
             </tr>
         </table>
 
+        <!-- Submit button and return display area -->
         <div>
             <button class="submit" onclick="checkAnswers()">Submit Answers</button>
         </div>

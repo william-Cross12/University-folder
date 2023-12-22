@@ -15,38 +15,30 @@ function showAlert(message, type) {
 }
 
 function checkCountry() {
-    let country_1, country_2, country_3, country_4, country_5, country_6, country_7, count;
+    // get all information from the HTML and define count
+    let count = 0;
     let resultsElement = document.getElementById("location_results");
-    count = 0;
-    country_1 = document.getElementById("country_1").value;
-    country_2 = document.getElementById("country_2").value;
-    country_3 = document.getElementById("country_3").value;
-    country_4 = document.getElementById("country_4").value;
-    country_5 = document.getElementById("country_5").value;
-    country_6 = document.getElementById("country_6").value;
-    country_7 = document.getElementById("country_7").value;
     let hiddenCells = document.querySelectorAll(".hidden");
 
-    if (country_1 == "USA") {
-        count++;
-    }
-    if (country_2 == "Spain") {
-        count++;
-    }
-    if (country_3 == "Scotland") {
-        count++;
-    }
-    if (country_4 == "England") {
-        count++;
-    }
-    if (country_5 == "Japan") {
-        count++;
-    }
-    if (country_6 == "the Netherlands" || country_6 == "The Netherlands" || country_6 == "Netherlands") {
-        count++;
-    }
-    if (country_7 == "Switzerland") {
-        count++;
+    // Define an array of ids with their correct answers
+    let questions = [
+        { id: 1, correctAnswer: "USA" },
+        { id: 2, correctAnswer: "Spain" },
+        { id: 3, correctAnswer: "Scotland" },
+        { id: 4, correctAnswer: "England" },
+        { id: 5, correctAnswer: "Japan" },
+        { id: 6, correctAnswer: "the Netherlands" },
+        { id: 7, correctAnswer: "Switzerland" }
+    ];
+
+    // Loop through the array and check if the selected answer is correct compared to user inputs
+    for (let i = 0; i < questions.length; i++) {
+        let question = questions[i];
+        let answer = document.getElementById("country_" + question.id).value;
+
+        if (answer === question.correctAnswer) {
+            count++;
+        }
     }
 
     if (count == 7) {
@@ -61,12 +53,15 @@ function checkCountry() {
         // Add the "hidden" class to the button
         firstStage.classList.add("hidden");
 
+        // removes the FAIL message if they had previously gotten the question wrong
         resultsElement.innerHTML = "";
 
     } else if (count > 0) {
+        // if the user gets some questions right but not all a bootstrap alert shows how many are correct
         showAlert("You only got " + count + "/7 correct.", "alert-warning");
         resultsElement.innerHTML = "<p style='font-size: 50px; color: red;'>FAIL</p>";
     } else {
+        // if the user gets all questions wrong a bootstrap alert tells them how bad they are
         showAlert("You only got 0/7 correct. Failure!!", "alert-danger");
         resultsElement.innerHTML = "<p style='font-size: 50px; color: red;'>FAIL</p>";
     }
@@ -74,47 +69,42 @@ function checkCountry() {
 
 
 function checkCity() {
-    // Get the selected city value
-    let selectedCity_1 = document.querySelector('input[name="city1"]:checked').value;
-    let selectedCity_2 = document.querySelector('input[name="city2"]:checked').value;
-    let selectedCity_3 = document.querySelector('input[name="city3"]:checked').value;
-    let selectedCity_4 = document.querySelector('input[name="city4"]:checked').value;
-    let selectedCity_5 = document.querySelector('input[name="city5"]:checked').value;
-    let selectedCity_6 = document.querySelector('input[name="city6"]:checked').value;
-    let selectedCity_7 = document.querySelector('input[name="city7"]:checked').value;
+    // get the user input from the HTML and define count
     let count = 0;
     let resultsElement = document.getElementById("location_results");
 
-    if (selectedCity_1 == "New-York") {
-        count++;
-    }
-    if (selectedCity_2 == "North") {
-        count++;
-    }
-    if (selectedCity_3 == "Edinburgh") {
-        count++;
-    }
-    if (selectedCity_4 == "London") {
-        count++;
-    }
-    if (selectedCity_5 == "Tokyo") {
-        count++;
-    }
-    if (selectedCity_6 == "Amsterdam") {
-        count++;
-    }
-    if (selectedCity_7 == "Geneva") {
-        count++;
+    // Define an array of ids with their correct answers
+    let questions = [
+        { id: "city1", correctAnswer: "New-York" },
+        { id: "city2", correctAnswer: "North" },
+        { id: "city3", correctAnswer: "Edinburgh" },
+        { id: "city4", correctAnswer: "London" },
+        { id: "city5", correctAnswer: "Tokyo" },
+        { id: "city6", correctAnswer: "Amsterdam" },
+        { id: "city7", correctAnswer: "Geneva" }
+    ];
+
+    // Loop through the array and check if the selected answer is correct compared to user inputs
+    for (let i = 0; i < questions.length; i++) {
+        let question = questions[i];
+        let selectedCity = document.querySelector('input[name="' + question.id + '"]:checked').value;
+
+        if (selectedCity === question.correctAnswer) {
+            count++;
+        }
     }
 
     if (count == 7) {
+        // if the user gets all questions correct a bootstrap alert tells them how smart they are
         showAlert('You got 7/7 correct!', 'alert-success');
         resultsElement.innerHTML = "<p style='font-size: 50px; color: green;'>SUCCESS!!</p>";
     } 
     else if (count > 0) {
+        // if the user gets some questions right but not all a bootstrap alert shows how many are correct
         showAlert("You only got " + count + "/7 correct.", "alert-warning");
         resultsElement.innerHTML = "<p style='font-size: 50px; color: red;'>FAIL</p>";
     } else {
+        // if the user gets all questions wrong a bootstrap alert tells them how bad they are
         showAlert("You only got 0/7 correct. Failure!!", "alert-danger");
         resultsElement.innerHTML = "<p style='font-size: 50px; color: red;'>FAIL</p>";
     }

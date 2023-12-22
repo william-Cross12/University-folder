@@ -1,8 +1,10 @@
+/* scenario container spacing and alignment */
 .scenario {
   text-align: left;
   padding: 40px;
 }
 
+/* creates a gray background relative to the div its in */
 .field {
   position: relative;
   width: 400px;
@@ -11,6 +13,7 @@
   margin-bottom: 20px;
 }
 
+/* creates a purple box on a specified position on the field */
 .trolley {
   position: absolute;
   width: 50px;
@@ -21,6 +24,7 @@
   z-index: 2; /* ensures the trolley appears above everything else */
 }
 
+/* sets colour and position for the people on the first row on the scenario */
 .row1 {
   position: absolute;
   width: 30px;
@@ -30,6 +34,7 @@
   left: 150px;
 }
 
+/* sets colour and position for the people on the second row on the scenario */
 .row2 {
   position: absolute;
   width: 30px;
@@ -39,6 +44,7 @@
   left: 150px;
 }
 
+/* the same style of button as on style.css but smaller to fit nicer */
 .button {
   padding: 5px;
   margin-top: 5px;
@@ -49,6 +55,7 @@
   transition-duration: 0.4s;
 }
 
+/* same hover style as the submit buttons */
 .button:hover {
   background-color: rgb(14, 122, 134);
 }
