@@ -41,19 +41,19 @@ p {
   align-items: center; /* Center items vertically within the container */
 }
 
-/* alters the spacing between questions for the quizzes
-needed to be done with the id method as just changing the td of the HTML does
-not work with padding */
-#td {
-  padding: 10px;
-}
-
 /* makes sure the image stays on the ad stays on the right of the page and if the screen
 is too small it makes sure the ad is displayed */
 .content {
   flex: 1; /* Let the content flex to take remaining space */
   padding: 20px;
   overflow-x: hidden;
+}
+
+/* alters the spacing between questions for the quizzes
+needed to be done with the id method as just changing the td of the HTML does
+not work with padding */
+#td {
+  padding: 10px;
 }
 
 /* gives the ad nice smooth edges and its spacing */
