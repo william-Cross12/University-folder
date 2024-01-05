@@ -121,11 +121,6 @@ week 40:    did lesson 6 web dev and started working on assignment      7 hours
 week 41:    did lesson 7 learnt about javascript and how its used in websites and continued to work on my assignment web page       7 hours
 
 
-
--------------------------------------------
-
-
-
 week 42:    did lesson 8. learnt a lot about js from extremely long lessons     7 hours
 
 
@@ -142,3 +137,16 @@ week 46:    did the last lesson on the web dev course and continued work on my a
 
 
 week 47:    finished coding the website assignment. All that is left is the wireframe, hierarchy, description, 1500 word essay and the video. This sounds like a lot no that I write it        7 hours
+
+
+week 48:    holiday
+
+
+
+-------------------------------------------
+
+
+BEGIN 2024!!!
+
+
+Friday 5th Jan:     completed my assignment and submitted it        7 hours
