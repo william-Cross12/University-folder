@@ -150,3 +150,11 @@ BEGIN 2024!!!
 
 
 Friday 5th Jan:     completed my assignment and submitted it        7 hours
+
+Friday 12th Jan:    completed self directed study as there was a gap in lectures today      7 hours
+
+
+Monday 22nd Jan:    started on the second work based learning module about critical thinking today      7 hours
+
+
+Monday 29th Jan:    started planning what to make my assignment about AI (how its used in the workplace or something)       7 hours

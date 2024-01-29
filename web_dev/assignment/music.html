@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Document title and meta tags for character set and viewport -->
+        <title>Music Quiz</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Custom universal stylesheet -->
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+        <!-- Bootstrap CSS and jQuery/Bootstrap JS libraries -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <!-- Custom script for this webpage -->
+        <script src="scripts/music_quiz_script.js"></script>
+
+        <!-- navigation bar current page is disabled -->
+        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">QuizMaster</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="music.html" class="nav-link disabled">Music Quiz</a></li>
+                    <li><a href="location.html">Location Quiz</a></li>
+                    <li><a href="TV_show.html">TV Show Quiz</a></li>
+                    <li><a href="trolley_problem.html">Trolley Problem</a></li>
+                    <li><a href="remove_ads.html">Remove Ads</a></li>
+                </ul>
+            </div>
+        </nav>
+    </head>
+
+    <body>
+        <!-- space for bootstrap alert to be shown -->
+        <div id="alert-container"></div>
+
+        <!-- Webpage information container -->
+        <div class="container">
+            <h2>About The Music Quiz</h2>
+            <p>After listening to a section of a song you select the video game you think it is from. <br>After selecting all of your answers hit submit to see if you where right!</p>
+        </div>
+        
+        <!-- Table structure for music quiz questions -->
+        <table>
+            <tr>
+                <!-- Question One -->
+                <td id="td">
+                    <p class="quiz-question">Audio Question One</p>
+                    <audio controls>
+                        <source src="music/doom.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </td>
+                <td id="td">
+                    <!-- input field for guessing the game -->
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Select Game</p>
+                        <select id="q1">
+                            <option value="0"></option>
+                            <option value="1">Genshin Impact</option>
+                            <option value="2">DOOM</option>
+                            <option value="3">Jetpack Joyride</option>
+                            <option value="4">Honkai: Star Rail</option>
+                            <option value="5">Devil May Cry</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Ad space -->
+                <td id="td">
+                    <a href="https://www.gov.uk/after-a-death/arrange-the-funeral" target="_blank" class="ad">
+                        <img src="ads/funeral_ad.jpeg" alt="choose our home to roast you!" width="250">
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Question Two -->
+                <td id="td">
+                    <p class="quiz-question">Audio Question Two</p>
+                    <audio controls>
+                        <source src="music/dmc.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </td>
+                <td id="td">
+                    <!-- input field for guessing the game -->
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Select Game</p>
+                        <select id="q2">
+                            <option value="0"></option>
+                            <option value="1">Genshin Impact</option>
+                            <option value="2">DOOM</option>
+                            <option value="3">Jetpack Joyride</option>
+                            <option value="4">Honkai: Star Rail</option>
+                            <option value="5">Devil May Cry</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Question Three -->
+                <td id="td">
+                    <p class="quiz-question">Audio Question Three</p>
+                    <audio controls>
+                        <source src="music/genshin.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </td>
+                <td id="td">
+                    <!-- input field for guessing the game -->
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Select Game</p>
+                        <select id="q3">
+                            <option value="0"></option>
+                            <option value="1">Genshin Impact</option>
+                            <option value="2">DOOM</option>
+                            <option value="3">Jetpack Joyride</option>
+                            <option value="4">Honkai: Star Rail</option>
+                            <option value="5">Devil May Cry</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Ad space -->
+                <td id="td">
+                    <a href="https://en.wikipedia.org/wiki/Titanic" target="_blank" class="ad">
+                        <img src="ads/film_ad.jpeg" alt="watch the titanic" width="250">
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Question Four -->
+                <td id="td">
+                    <p class="quiz-question">Audio Question Four</p>
+                    <audio controls>
+                        <source src="music/jetpack.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </td>
+                <td id="td">
+                    <!-- input field for guessing the game -->
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Select Game</p>
+                        <select id="q4">
+                            <option value="0"></option>
+                            <option value="1">Genshin Impact</option>
+                            <option value="2">DOOM</option>
+                            <option value="3">Jetpack Joyride</option>
+                            <option value="4">Honkai: Star Rail</option>
+                            <option value="5">Devil May Cry</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Question Five -->
+                <td id="td">
+                    <p class="quiz-question">Audio Question Five</p>
+                    <audio controls>
+                        <source src="music/StarRail.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </td>
+                <td id="td">
+                    <!-- input field for guessing the game -->
+                    <div class="custom-select" style="width:200px;">
+                        <p class="sub-question">Select Game</p>
+                        <select id="q5">
+                            <option value="0"></option>
+                            <option value="1">Genshin Impact</option>
+                            <option value="2">DOOM</option>
+                            <option value="3">Jetpack Joyride</option>
+                            <option value="4">Honkai: Star Rail</option>
+                            <option value="5">Devil May Cry</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Ad space with remove ads option -->
+                <td id="td">
+                    <a href="https://metalgear.fandom.com/wiki/Steven_Armstrong" target="_blank" class="ad">
+                        <img src="ads/armstrong_ad.jpeg" alt="vote for senator armstrong" width="250">
+                    </a>
+                    <a href="remove_ads.html">(Remove Ads)</a>
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <!-- Submit button and return display area -->
+        <div>
+            <button class="submit" onclick="checkAnswers()">Submit Answers</button>
+        </div>
+
+        <p class="container" id="results"></p>
+
+    </body>
+</html>

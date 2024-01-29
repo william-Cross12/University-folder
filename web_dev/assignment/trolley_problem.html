@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Document title and meta tags for character set and viewport -->
+        <title>Trolley Problem</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- 
+            Custom universal stylesheet 
+            as well as stylesheet for just this webpage
+        -->
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="stylesheet" type="text/css" href="styles/trolley.css">
+        
+        <!-- Bootstrap CSS and jQuery/Bootstrap JS libraries -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <!-- Custom script for this webpage -->
+        <script src="scripts/trolley_problem_script.js"></script>
+
+        <!-- navigation bar current page is disabled -->
+        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">QuizMaster</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="music.html">Music Quiz</a></li>
+                    <li><a href="location.html">Location Quiz</a></li>
+                    <li><a href="TV_show.html">TV Show Quiz</a></li>
+                    <li><a href="trolley_problem.html" class="nav-link disabled">Trolley Problem</a></li>
+                    <li><a href="remove_ads.html">Remove Ads</a></li>
+                </ul>
+            </div>
+        </nav>
+    </head>
+
+    <body>
+
+        <!-- Webpage information container -->
+        <div class="container">
+            <h2>About The Trolley Problem</h2>
+            <p>You will be given multiple scenarios and will need to decide if you would pull the lever to move the train to the other track or not</p>
+            <p>(if you do pull the lever does that make you responsible for their deaths?)</p>
+        </div>
+
+        <!-- Trolley Scenario One -->
+        <div class="scenario" id="trolleyProblem_1">
+            <p class="quiz-question">Trolley Scenario One</p>
+            <p>
+                - On the top track there are 3 stranger, <br>
+                - On the bottom track there is 1 stranger.
+            </p>
+            <!-- Simulation field with trolley and rows of people -->
+            <div class="field">
+                <div class="trolley" id="trolley" style="bottom: 30px"></div>
+                <div class="row1" id="row1"></div>
+                <div class="row2" id="row2"></div>
+                <div class="row2" id="row3" style="left: 200px"></div>
+                <div class="row2" id="row4" style="left: 250px"></div>
+            </div>
+            <!-- Buttons for interaction with the simulation -->
+            <button class="button" onclick="pullLever(this)">Pull Lever</button>
+            <button class="button" onclick="startTrolley(this)">Start Simulation</button>
+            <button class="button" onclick="resetSimulation(this)">Reset Simulation</button>
+        </div>
+
+        <div class="container">
+            <!-- Ad space -->
+            <a href="https://www.gov.uk/after-a-death/arrange-the-funeral" target="_blank" class="ad">
+                <img src="ads/funeral_ad.jpeg" alt="choose our home to roast you!" width="250">
+            </a>
+        </div>
+
+        <!-- Trolley Scenario Two -->
+        <div class="scenario" id="trolleyProblem_2">
+            <p class="quiz-question">Trolley Scenario Two</p>
+            <p>
+                - On the top track there is one stranger, <br>
+                - On the bottom track there are 3 strangers.
+            </p>
+            <!-- Simulation field with trolley and rows of people -->
+            <div class="field">
+                <div class="trolley" id="trolley" style="bottom: 30px"></div>
+                <div class="row1" id="row1"></div>
+                <div class="row1" id="row2" style="left: 200px"></div>
+                <div class="row1" id="row3" style="left: 250px"></div>
+                <div class="row2" id="row4"></div>
+            </div>
+            <!-- Buttons for interaction with the simulation -->
+            <button class="button" onclick="pullLever(this)">Pull Lever</button>
+            <button class="button" onclick="startTrolley(this)">Start Simulation</button>
+            <button class="button" onclick="resetSimulation(this)">Reset Simulation</button>
+        </div>
+
+        <div class="container">
+            <!-- Ad space -->
+            <a href="https://metalgear.fandom.com/wiki/Steven_Armstrong" target="_blank" class="ad">
+                <img src="ads/armstrong_ad.jpeg" alt="vote for senator armstrong" width="250">
+            </a>
+        </div>
+
+        <!-- Trolley Scenario Three -->
+        <div class="scenario" id="trolleyProblem_3">
+            <p class="quiz-question">Trolley Scenario Three</p>
+            <p>
+                - On the top track is a person of 66 who is 3 days from retirement, <br>
+                - On the bottom track there is a child of 4 with a loving family.
+            </p>
+            <!-- Simulation field with trolley and rows of people -->
+            <div class="field">
+                <div class="trolley" id="trolley" style="bottom: 30px"></div>
+                <div class="row1" id="row1"></div>
+                <div class="row2" id="row2"></div>
+            </div>
+            <!-- Buttons for interaction with the simulation -->
+            <button class="button" onclick="pullLever(this)">Pull Lever</button>
+            <button class="button" onclick="startTrolley(this)">Start Simulation</button>
+            <button class="button" onclick="resetSimulation(this)">Reset Simulation</button>
+        </div>
+
+        <div>
+            <!-- Ad space with remove ads option -->
+            <a href="https://en.wikipedia.org/wiki/Titanic" target="_blank" class="ad">
+                <img src="ads/film_ad.jpeg" alt="watch the titanic" width="250">
+            </a>
+        </div>
+        <a href="remove_ads.html" style="padding: 20px">(Remove Ads)</a>
+
+        <!-- Trolley Scenario Four -->
+        <div class="scenario" id="trolleyProblem_4">
+            <p class="quiz-question">Trolley Scenario Four</p>
+            <p>
+                - On the top track there is a child of 4 with a loving family, <br>
+                - On the bottom track is a person of 66 who is 3 days from retirement.
+            </p>
+            <!-- Simulation field with trolley and rows of people -->
+            <div class="field">
+                <div class="trolley" id="trolley" style="bottom: 30px"></div>
+                <div class="row1" id="row1"></div>
+                <div class="row2" id="row4"></div>
+            </div>
+            <!-- Buttons for interaction with the simulation -->
+            <button class="button" onclick="pullLever(this)">Pull Lever</button>
+            <button class="button" onclick="startTrolley(this)">Start Simulation</button>
+            <button class="button" onclick="resetSimulation(this)">Reset Simulation</button>
+        </div>
+
+        <!-- Submit button and return display area -->
+        <button class="submit" onclick="Results()">Get Results</button>
+        
+        <p class="container" id="results"></p>
+
+    </body>
+</html>

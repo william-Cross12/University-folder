@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Document title and meta tags for character set and viewport -->
+        <title>Quizes</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS and jQuery/Bootstrap JS libraries -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <!-- Custom universal stylesheet -->
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+        <!-- Custom stylesheet for small screen ad rule -->
+        <link rel="stylesheet" type="text/css" href="styles/home.css">
+
+        <!-- navigation bar -->
+        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">QuizMaster</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="music.html">Music Quiz</a></li>
+                    <li><a href="location.html">Location Quiz</a></li>
+                    <li><a href="TV_show.html">TV Show Quiz</a></li>
+                    <li><a href="trolley_problem.html">Trolley Problem</a></li>
+                    <li><a href="remove_ads.html">Remove Ads</a></li>
+                </ul>
+            </div>
+        </nav>
+    </head>
+
+    <body>
+        <!-- Website information container -->
+        <div class="container">
+            <h2>About This Website</h2>
+            <p>Throughout this website you will be play through different types of quizzes which you can answer and get a score on.</p>
+            <p>please remember that adverts help us to keep running this website for everyone free of charge</p>
+        </div>
+
+        <!-- website introduction video with ad-->
+        <div class="info">
+            <div class="content">
+                <iframe width="420" height="315"
+                    src="https://www.youtube.com/embed/EAudoFiHYRk">
+                </iframe>
+            </div>
+            <a href="https://metalgear.fandom.com/wiki/Steven_Armstrong" target="_blank" class="ad">
+                <img src="ads/armstrong_ad.jpeg" alt="vote for senator armstrong" width="250">
+            </a>
+        </div>
+
+        <!-- Website colour changing text with ad-->
+        <div class="info">
+            <div class="content">
+                <p class="colour-change">HAPPY QUIZZING!!!</p>
+            </div>
+            <a href="https://en.wikipedia.org/wiki/Titanic" target="_blank" class="ad">
+                <img src="ads/film_ad.jpeg" alt="watch the titanic" width="250">
+            </a>
+        </div>
+
+        <!-- ad with remove ads option -->
+        <div class="info">
+            <a href="remove_ads.html">(Remove Ads)</a>
+            <a href="https://www.gov.uk/after-a-death/arrange-the-funeral" target="_blank" class="ad">
+                <img src="ads/funeral_ad.jpeg" alt="choose our home to roast you!" width="250">
+            </a>
+        </div>
+    </body>
+</html>
