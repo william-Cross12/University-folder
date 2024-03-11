@@ -143,13 +143,14 @@ week 48:    holiday
 
 
 
--------------------------------------------
-
-
 BEGIN 2024!!!
 
 
+January:
+
+
 Friday 5th Jan:     completed my assignment and submitted it        7 hours
+
 
 Friday 12th Jan:    completed self directed study as there was a gap in lectures today      7 hours
 
@@ -158,3 +159,32 @@ Monday 22nd Jan:    started on the second work based learning module about criti
 
 
 Monday 29th Jan:    started planning what to make my assignment about AI (how its used in the workplace or something)       7 hours
+
+
+
+February:
+
+
+Monday 5th Feb:     today looked at enquiry based learning in the lecture. It was useful getting an idea of how to structure that type of learning. 7 hours total
+
+
+Monday 12th Feb:    on holiday
+
+
+Monday 19th Feb:    Today we had an introductory lecture with Justin to start the networking module for an hour and I downloaded Cisco packet tracer ready for next week and played around with it. I then attended the work based learning lecture on exploring personal development. 7 hours total
+
+
+Monday 26th Feb:    Today I read through the powerpoint for the first networking lecture which was mostly what I had learnt at school with a few differences like wire types used. I also created a plan for how I would write the assignment for the work based learning module and started to send a survey out to gather data I also read the first 3 chapters of a book that we had been told to read through the previous week. I attended the networking lecture (1 hour) and did the activity after. 7 hours total
+
+
+
+-------------------------------------------
+
+
+March:
+
+
+Monday 4th March:   Today I did the second and third lectures for the networking module. I went over the packet tracer terminal for networks as well as different network protocols. I then attended the work based learning module lecture on critical skills and research. I found the exercise on one of the networking module lectures useful as it helped me understand how cisco packet tracer worked.    7 hours total
+
+
+Monday 11th March:  Today I completed the fourth and fifth lectures for the networking module and learnt how different connectors are used and why as well as how binary and hexadecimal are used in IPV4 and IPV6. I also came up with more ideas on my work based learning module (what specific part I should be focusing on the assignment and gathering data).     7 hours total
