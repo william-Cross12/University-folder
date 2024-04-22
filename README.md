@@ -188,3 +188,25 @@ Monday 4th March:   Today I did the second and third lectures for the networking
 
 
 Monday 11th March:  Today I completed the fourth and fifth lectures for the networking module and learnt how different connectors are used and why as well as how binary and hexadecimal are used in IPV4 and IPV6. I also came up with more ideas on my work based learning module (what specific part I should be focusing on the assignment and gathering data).     7 hours total
+
+
+Monday 18th March:  Today I completed the sixth lecture for the networking module. I learnt about ethernet switching and attended a lecture about subnet masking which helped my understanding a lot. I then attended the work based learning module on methods of enquiry and layed out the structure of my assignment.        7 hours total
+
+
+Monday 25th March:  Today I completed lectures 7 and 8 for networking which where about IP protocols and set up commands for routers and other network devices. I also worked more on my work based learning assignment and have come up with a draft plan and a potential question for it.        7 hours total
+
+
+
+--------------------------------------------
+
+
+April:
+
+
+Tuesday 2nd April:  completed the networking lecture on subnets. Now with the help of the table in it I understand subnetting much better than before. I then continued work on my work based learning assignment.  7 hours total
+
+Monday 8th April:   completed lectures 11 and 12 for networking which included more on subnetting and how to deal with waisted parts of the subnet, the other was about IPV6 and how its used and connects to IPV4. I also researched further on my work based learning assignment to get more sources, I decided on a final question for it to be on and I wrote the introduction as well as finalised the structure and my plan of the assignment.    7 hours total
+
+Monday 15th April:  revised all networking lectures 1 to 8 and created some notes to help with the exam next week. I then attended the work based learning lecture about constructing effective questioners. I also prepared to conduct an interview on my assignment question for research.    7 hours total
+
+Monday 22nd April:  completed TCA1 (the first exam) for the Networking module. I also conducted an interview for my final method of enquirey for my work based learning assignment.     7 hours total
